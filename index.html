@@ -437,16 +437,45 @@
         </div>
     </section>
 
-    <footer id="contact" class="academic-navy text-white py-12 px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-6">Contact & Collaboration</h2>
-            <p class="mb-8">Available for academic and technical consulting.</p>
-            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
-                <a href="mailto:deoshidende@t-online.de" class="hover:text-blue-300 transition"><i class="fas fa-envelope mr-2"></i> deoshidende@t-online.de</a>
-                <a href="https://orcid.org/0000-0002-2181-958X" target="_blank" class="hover:text-blue-300 transition"><i class="fab fa-orcid mr-2"></i> ORCID Profile</a>
+    <footer id="contact" class="academic-navy text-white py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8 text-center">Get In Touch</h2>
 
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <p class="text-blue-100 mb-6 leading-relaxed">
+                        I am open to collaborations regarding <strong>Applied XR Research</strong>, <strong>Quality Assurance</strong>, or <strong>Infrastructure Consultations</strong>. Please use the form to send a direct message.
+                    </p>
+                    <div class="space-y-4 text-sm">
+                        <div class="flex items-center"><i class="fab fa-linkedin w-6 text-blue-400"></i> <a href="https://www.linkedin.com/in/deoshidende/" class="hover:underline">LinkedIn Profile</a></div>
+                        <div class="flex items-center"><i class="fab fa-twitter w-6 text-blue-400"></i> <a href="https://www.x.com" class="hover:underline">@dshidende</a></div>
+                    </div>
+                </div>
+
+                <form action="https://formspree.io/f/YOUR_ENDPOINT_HERE" method="POST" class="bg-white p-6 rounded-xl text-gray-900 shadow-xl">
+                    <div class="mb-4">
+                        <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Full Name</label>
+                        <input type="text" name="name" required class="w-full p-2 border border-gray-300 rounded focus:border-blue-500 outline-none transition">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Email Address</label>
+                        <input type="email" name="_replyto" required class="w-full p-2 border border-gray-300 rounded focus:border-blue-500 outline-none transition">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Message</label>
+                        <textarea name="message" rows="4" required class="w-full p-2 border border-gray-300 rounded focus:border-blue-500 outline-none transition"></textarea>
+                    </div>
+                    <input type="text" name="_gotcha" style="display:none">
+
+                    <button type="submit" class="w-full academic-navy text-white font-bold py-3 rounded hover:bg-blue-800 transition">
+                        Send Message <i class="fas fa-paper-plane ml-2"></i>
+                    </button>
+                </form>
             </div>
-            <p class="mt-12 text-sm text-gray-400">© 2026 Dr. Deogratias Shidende. Built with Tailwind CSS.</p>
+
+            <p class="text-center text-xs text-slate-400 mt-16 uppercase tracking-widest">
+                © 2026 Dr. Deogratias Shidende | Built with Tailwind CSS
+            </p>
         </div>
     </footer>
 
