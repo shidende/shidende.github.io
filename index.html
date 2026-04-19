@@ -44,20 +44,29 @@
     <!-- Navigation -->
     <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="h-16 flex items-center justify-between">
+            <div class="h-16 flex items-center justify-between gap-4">
                 <a href="#top" class="font-bold tracking-tight text-academic-navy text-lg sm:text-xl">
                     Dr. Deogratias Shidende
                 </a>
 
                 <div class="hidden md:flex items-center gap-7 text-sm font-medium">
-                    <a href="#about" class="hover:text-academic-navy transition">About</a>
-                    <a href="#pathways" class="hover:text-academic-navy transition">Profile Pathways</a>
-                    <a href="#research" class="hover:text-academic-navy transition">Research</a>
-                    <a href="#engineering" class="hover:text-academic-navy transition">Engineering</a>
-                    <a href="#infrastructure" class="hover:text-academic-navy transition">Infrastructure</a>
-                    <a href="#experience" class="hover:text-academic-navy transition">Experience</a>
-                    <a href="#contact" class="hover:text-academic-navy transition">Contact</a>
+                    <a href="#about" class="hover:text-academic-navy transition" data-i18n="nav.about">About</a>
+                    <a href="#pathways" class="hover:text-academic-navy transition" data-i18n="nav.pathways">Profile Pathways</a>
+                    <a href="#research" class="hover:text-academic-navy transition" data-i18n="nav.research">Research</a>
+                    <a href="#engineering" class="hover:text-academic-navy transition" data-i18n="nav.engineering">Engineering</a>
+                    <a href="#infrastructure" class="hover:text-academic-navy transition" data-i18n="nav.infrastructure">Infrastructure</a>
+                    <a href="#experience" class="hover:text-academic-navy transition" data-i18n="nav.experience">Experience</a>
+                    <a href="#contact" class="hover:text-academic-navy transition" data-i18n="nav.contact">Contact</a>
                 </div>
+
+                <button
+                    id="langToggle"
+                    class="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-academic-navy hover:bg-slate-50 transition"
+                    aria-label="Toggle language"
+                >
+                    <i class="fas fa-language"></i>
+                    <span id="langToggleText">DE</span>
+                </button>
             </div>
         </div>
     </nav>
@@ -67,7 +76,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
             <div class="grid lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-8">
-                    <p class="uppercase tracking-[0.22em] text-blue-200 text-xs sm:text-sm font-semibold mb-4">
+                    <p class="uppercase tracking-[0.22em] text-blue-200 text-xs sm:text-sm font-semibold mb-4" data-i18n="hero.kicker">
                         Academic Technology · Applied Research · Infrastructure Engineering
                     </p>
 
@@ -75,36 +84,35 @@
                         Dr. Deogratias Mashinagwi Shidende
                     </h1>
 
-                    <p class="text-lg sm:text-xl text-blue-100 leading-relaxed max-w-4xl mb-8">
-                        I work at the intersection of <strong>IT infrastructure</strong>,
-                        <strong>applied digital learning</strong>, and <strong>accessible XR research</strong>.
-                        My profile combines more than 15 years of enterprise and university systems experience
-                        with academic teaching, software development, and research on inclusive immersive technologies.
+                    <p class="text-lg sm:text-xl text-blue-100 leading-relaxed max-w-4xl mb-8" data-i18n="hero.summary">
+                        I work at the intersection of IT infrastructure, applied digital learning, and accessible XR research.
+                        My profile combines more than 15 years of enterprise and university systems experience with academic teaching,
+                        software development, and research on inclusive immersive technologies.
                     </p>
 
                     <div class="flex flex-wrap gap-3 mb-8">
-                        <span class="inline-flex items-center px-3 py-2 rounded-full bg-white/10 border border-white/20 text-sm">
+                        <span class="inline-flex items-center px-3 py-2 rounded-full bg-white/10 border border-white/20 text-sm" data-i18n="hero.tag1">
                             <i class="fas fa-server mr-2"></i> IT Infrastructure
                         </span>
-                        <span class="inline-flex items-center px-3 py-2 rounded-full bg-white/10 border border-white/20 text-sm">
+                        <span class="inline-flex items-center px-3 py-2 rounded-full bg-white/10 border border-white/20 text-sm" data-i18n="hero.tag2">
                             <i class="fas fa-vr-cardboard mr-2"></i> Accessible XR
                         </span>
-                        <span class="inline-flex items-center px-3 py-2 rounded-full bg-white/10 border border-white/20 text-sm">
+                        <span class="inline-flex items-center px-3 py-2 rounded-full bg-white/10 border border-white/20 text-sm" data-i18n="hero.tag3">
                             <i class="fas fa-graduation-cap mr-2"></i> Teaching & Labs
                         </span>
-                        <span class="inline-flex items-center px-3 py-2 rounded-full bg-white/10 border border-white/20 text-sm">
+                        <span class="inline-flex items-center px-3 py-2 rounded-full bg-white/10 border border-white/20 text-sm" data-i18n="hero.tag4">
                             <i class="fas fa-flask mr-2"></i> Applied Research
                         </span>
                     </div>
 
                     <div class="flex flex-wrap gap-4">
-                        <a href="#contact" class="inline-flex items-center bg-white text-academic-navy px-6 py-3 rounded-xl font-bold hover:bg-slate-100 transition">
+                        <a href="#contact" class="inline-flex items-center bg-white text-academic-navy px-6 py-3 rounded-xl font-bold hover:bg-slate-100 transition" data-i18n="hero.cta1">
                             Get in touch
                         </a>
-                        <a href="https://orcid.org/0000-0002-2181-958X" target="_blank" rel="noopener noreferrer" class="inline-flex items-center border border-white/40 px-6 py-3 rounded-xl font-bold hover:bg-white hover:text-academic-navy transition">
+                        <a href="https://orcid.org/0000-0002-2181-958X" target="_blank" rel="noopener noreferrer" class="inline-flex items-center border border-white/40 px-6 py-3 rounded-xl font-bold hover:bg-white hover:text-academic-navy transition" data-i18n="hero.cta2">
                             ORCID Profile
                         </a>
-                        <a href="#research" class="inline-flex items-center border border-white/20 px-6 py-3 rounded-xl font-bold hover:bg-white/10 transition">
+                        <a href="#research" class="inline-flex items-center border border-white/20 px-6 py-3 rounded-xl font-bold hover:bg-white/10 transition" data-i18n="hero.cta3">
                             View Research
                         </a>
                     </div>
@@ -123,15 +131,15 @@
                         <div class="space-y-4 text-sm text-blue-50">
                             <div class="flex items-start gap-3">
                                 <i class="fas fa-location-dot mt-1 text-academic-gold"></i>
-                                <span>Wörth am Rhein, Germany</span>
+                                <span data-i18n="hero.side1">Wörth am Rhein, Germany</span>
                             </div>
                             <div class="flex items-start gap-3">
                                 <i class="fas fa-language mt-1 text-academic-gold"></i>
-                                <span>English (C1) · German (B2, progressing toward C1)</span>
+                                <span data-i18n="hero.side2">English (C1) · German (B2, progressing toward C1)</span>
                             </div>
                             <div class="flex items-start gap-3">
                                 <i class="fas fa-building-columns mt-1 text-academic-gold"></i>
-                                <span>Open to academic, applied research, and technical roles</span>
+                                <span data-i18n="hero.side3">Open to academic, applied research, and technical roles</span>
                             </div>
                             <div class="flex items-start gap-3">
                                 <i class="fas fa-link mt-1 text-academic-gold"></i>
@@ -154,8 +162,8 @@
                     <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center mb-4">
                         <i class="fas fa-microscope text-xl"></i>
                     </div>
-                    <h2 class="font-bold text-xl mb-2">Applied Research & Teaching</h2>
-                    <p class="text-slate-600 text-sm leading-relaxed">
+                    <h2 class="font-bold text-xl mb-2" data-i18n="summary.card1.title">Applied Research & Teaching</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed" data-i18n="summary.card1.text">
                         Research and teaching in accessible XR, digital learning, programming, HCI, and practice-oriented academic supervision.
                     </p>
                 </div>
@@ -164,8 +172,8 @@
                     <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-4">
                         <i class="fas fa-code text-xl"></i>
                     </div>
-                    <h2 class="font-bold text-xl mb-2">Software Engineering</h2>
-                    <p class="text-slate-600 text-sm leading-relaxed">
+                    <h2 class="font-bold text-xl mb-2" data-i18n="summary.card2.title">Software Engineering</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed" data-i18n="summary.card2.text">
                         Development of accessible AR systems, institutional information systems, automated testing pipelines, and user-oriented technical solutions.
                     </p>
                 </div>
@@ -174,8 +182,8 @@
                     <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center mb-4">
                         <i class="fas fa-network-wired text-xl"></i>
                     </div>
-                    <h2 class="font-bold text-xl mb-2">Infrastructure & Operations</h2>
-                    <p class="text-slate-600 text-sm leading-relaxed">
+                    <h2 class="font-bold text-xl mb-2" data-i18n="summary.card3.title">Infrastructure & Operations</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed" data-i18n="summary.card3.text">
                         More than 15 years of experience in hybrid infrastructure, Windows/Linux administration, virtualisation, networking, security, and laboratory support.
                     </p>
                 </div>
@@ -187,79 +195,71 @@
     <section id="about" class="section-anchor py-20 px-4">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-10 items-start">
             <div class="lg:col-span-7">
-                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-academic-navy mb-3">Professional Profile</p>
-                <h2 class="text-3xl sm:text-4xl font-bold mb-6">An academic technologist with integrated expertise</h2>
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-academic-navy mb-3" data-i18n="about.kicker">Professional Profile</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6" data-i18n="about.title">An academic technologist with integrated expertise</h2>
 
                 <div class="space-y-5 text-slate-700 leading-relaxed">
-                    <p>
-                        I am an applied researcher, software engineer, lecturer, and senior systems administrator
-                        with a career spanning higher education, research environments, and enterprise-scale IT operations.
-                        My work is defined by a consistent goal: to connect robust technical systems with practical
-                        educational and institutional value.
+                    <p data-i18n="about.p1">
+                        I am an applied researcher, software engineer, lecturer, and senior systems administrator with a career spanning higher education,
+                        research environments, and enterprise-scale IT operations. My work is defined by a consistent goal: to connect robust technical systems
+                        with practical educational and institutional value.
                     </p>
-                    <p>
-                        My professional foundation was built in infrastructure and systems administration, where I
-                        designed and maintained secure hybrid environments, campus networks, identity services,
-                        virtualisation platforms, and digital learning systems for large academic communities.
-                        This background continues to shape my engineering approach through a strong emphasis on
-                        reliability, scalability, and security by design.
+                    <p data-i18n="about.p2">
+                        My professional foundation was built in infrastructure and systems administration, where I designed and maintained secure hybrid environments,
+                        campus networks, identity services, virtualisation platforms, and digital learning systems for large academic communities. This background
+                        continues to shape my engineering approach through a strong emphasis on reliability, scalability, and security by design.
                     </p>
-                    <p>
-                        My more recent academic work has focused on the design and development of accessible
-                        augmented reality authoring tools for non-technical educators. Through this research,
-                        I combined <strong>Design-Based Research</strong>, <strong>Agile Scrum</strong>,
-                        usability evaluation, and inclusive design principles to create practical solutions for
-                        technology-enhanced learning.
+                    <p data-i18n="about.p3">
+                        My more recent academic work has focused on the design and development of accessible augmented reality authoring tools for non-technical educators.
+                        Through this research, I combined Design-Based Research, Agile Scrum, usability evaluation, and inclusive design principles to create practical
+                        solutions for technology-enhanced learning.
                     </p>
-                    <p>
-                        I therefore bring a rare combination of strengths across
-                        <strong>infrastructure operations</strong>,
-                        <strong>software development</strong>,
-                        <strong>teaching and laboratory support</strong>, and
-                        <strong>research-led innovation</strong>.
+                    <p data-i18n="about.p4">
+                        I therefore bring a rare combination of strengths across infrastructure operations, software development, teaching and laboratory support,
+                        and research-led innovation.
                     </p>
                 </div>
             </div>
 
             <div class="lg:col-span-5">
                 <div class="soft-card p-6">
-                    <h3 class="font-bold text-xl mb-5 text-academic-navy">Selected strengths</h3>
+                    <h3 class="font-bold text-xl mb-5 text-academic-navy" data-i18n="about.strengthsTitle">Selected strengths</h3>
 
                     <div class="space-y-4">
                         <div class="flex items-start gap-3">
                             <i class="fas fa-check-circle text-emerald-600 mt-1"></i>
-                            <p class="text-sm text-slate-700">Bridges academic research, teaching, and technical implementation</p>
+                            <p class="text-sm text-slate-700" data-i18n="about.s1">Bridges academic research, teaching, and technical implementation</p>
                         </div>
                         <div class="flex items-start gap-3">
                             <i class="fas fa-check-circle text-emerald-600 mt-1"></i>
-                            <p class="text-sm text-slate-700">Experienced in both strategic systems work and hands-on delivery</p>
+                            <p class="text-sm text-slate-700" data-i18n="about.s2">Experienced in both strategic systems work and hands-on delivery</p>
                         </div>
                         <div class="flex items-start gap-3">
                             <i class="fas fa-check-circle text-emerald-600 mt-1"></i>
-                            <p class="text-sm text-slate-700">Strong fit for universities, applied labs, digital learning teams, and innovation units</p>
+                            <p class="text-sm text-slate-700" data-i18n="about.s3">Strong fit for universities, applied labs, digital learning teams, and innovation units</p>
                         </div>
                         <div class="flex items-start gap-3">
                             <i class="fas fa-check-circle text-emerald-600 mt-1"></i>
-                            <p class="text-sm text-slate-700">Combines infrastructure depth with user-centred and accessibility-focused design</p>
+                            <p class="text-sm text-slate-700" data-i18n="about.s4">Combines infrastructure depth with user-centred and accessibility-focused design</p>
                         </div>
                     </div>
 
                     <div class="mt-8 grid sm:grid-cols-2 gap-4">
                         <div class="rounded-xl bg-slate-50 p-4 border border-slate-200">
                             <p class="text-2xl font-bold text-academic-navy">15+</p>
-                            <p class="text-xs uppercase tracking-wider text-slate-500 mt-1">Years of technical and academic experience</p>
+                            <p class="text-xs uppercase tracking-wider text-slate-500 mt-1" data-i18n="about.stat1">Years of technical and academic experience</p>
                         </div>
                         <div class="rounded-xl bg-slate-50 p-4 border border-slate-200">
                             <p class="text-2xl font-bold text-academic-navy">3,000+</p>
-                            <p class="text-xs uppercase tracking-wider text-slate-500 mt-1">Users supported in campus infrastructure</p>
+                            <p class="text-xs uppercase tracking-wider text-slate-500 mt-1" data-i18n="about.stat2">Users supported in campus infrastructure</p>
                         </div>
                         <div class="rounded-xl bg-slate-50 p-4 border border-slate-200">
                             <p class="text-2xl font-bold text-academic-navy">Ph.D.</p>
-                            <p class="text-xs uppercase tracking-wider text-slate-500 mt-1">Accessible AR authoring systems</p>
+                            <p class="text-xs uppercase tracking-wider text-slate-500 mt-1" data-i18n="about.stat3">Accessible AR authoring systems</p>
                         </div>
                         <div class="rounded-xl bg-slate-50 p-4 border border-slate-200">
-                            <p class="text-2xl font-bold text-academic-navy">Multi-role</p>
-                            <p class="text-xs uppercase tracking-wider text-slate-500 mt-1">Research · Engineering · Infrastructure</p>
+                            <p class="text-2xl font-bold text-academic-navy" data-i18n="about.stat4Title">Multi-role</p>
+                            <p class="text-xs uppercase tracking-wider text-slate-500 mt-1" data-i18n="about.stat4">Research · Engineering · Infrastructure</p>
                         </div>
                     </div>
                 </div>
@@ -271,12 +271,11 @@
     <section id="pathways" class="section-anchor py-20 px-4 bg-white border-y border-slate-200">
         <div class="max-w-7xl mx-auto">
             <div class="max-w-3xl mb-12">
-                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-academic-navy mb-3">Profile Pathways</p>
-                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Different audiences can enter through different strengths</h2>
-                <p class="text-slate-600 leading-relaxed">
-                    This portfolio is intentionally structured for academic leaders, technical managers,
-                    and research collaborators. Each pathway highlights a different part of my profile
-                    while remaining connected to the whole.
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-academic-navy mb-3" data-i18n="pathways.kicker">Profile Pathways</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4" data-i18n="pathways.title">Different audiences can enter through different strengths</h2>
+                <p class="text-slate-600 leading-relaxed" data-i18n="pathways.text">
+                    This portfolio is intentionally structured for academic leaders, technical managers, and research collaborators.
+                    Each pathway highlights a different part of my profile while remaining connected to the whole.
                 </p>
             </div>
 
@@ -285,36 +284,33 @@
                     <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center mb-4">
                         <i class="fas fa-building-columns"></i>
                     </div>
-                    <h3 class="font-bold text-xl mb-3">For academic institutions</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        I contribute to teaching, curriculum support, laboratory preparation, educational technology development,
-                        and practice-oriented supervision in applied university contexts.
+                    <h3 class="font-bold text-xl mb-3" data-i18n="pathways.card1.title">For academic institutions</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4" data-i18n="pathways.card1.text">
+                        I contribute to teaching, curriculum support, laboratory preparation, educational technology development, and practice-oriented supervision in applied university contexts.
                     </p>
-                    <a href="#research" class="text-sm font-semibold text-academic-navy hover:underline">Explore research and teaching →</a>
+                    <a href="#research" class="text-sm font-semibold text-academic-navy hover:underline" data-i18n="pathways.card1.link">Explore research and teaching →</a>
                 </div>
 
                 <div class="soft-card p-6">
                     <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-4">
                         <i class="fas fa-laptop-code"></i>
                     </div>
-                    <h3 class="font-bold text-xl mb-3">For engineering and product teams</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        I design and implement accessible digital systems, test workflows, interactive XR applications,
-                        and information systems with an emphasis on usability and maintainability.
+                    <h3 class="font-bold text-xl mb-3" data-i18n="pathways.card2.title">For engineering and product teams</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4" data-i18n="pathways.card2.text">
+                        I design and implement accessible digital systems, test workflows, interactive XR applications, and information systems with an emphasis on usability and maintainability.
                     </p>
-                    <a href="#engineering" class="text-sm font-semibold text-academic-navy hover:underline">Explore software engineering →</a>
+                    <a href="#engineering" class="text-sm font-semibold text-academic-navy hover:underline" data-i18n="pathways.card2.link">Explore software engineering →</a>
                 </div>
 
                 <div class="soft-card p-6">
                     <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center mb-4">
                         <i class="fas fa-shield-halved"></i>
                     </div>
-                    <h3 class="font-bold text-xl mb-3">For infrastructure and operations roles</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        I bring long-standing experience in hybrid university infrastructure, Windows/Linux systems,
-                        networking, virtualisation, identity services, monitoring, and operational continuity.
+                    <h3 class="font-bold text-xl mb-3" data-i18n="pathways.card3.title">For infrastructure and operations roles</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4" data-i18n="pathways.card3.text">
+                        I bring long-standing experience in hybrid university infrastructure, Windows/Linux systems, networking, virtualisation, identity services, monitoring, and operational continuity.
                     </p>
-                    <a href="#infrastructure" class="text-sm font-semibold text-academic-navy hover:underline">Explore infrastructure work →</a>
+                    <a href="#infrastructure" class="text-sm font-semibold text-academic-navy hover:underline" data-i18n="pathways.card3.link">Explore infrastructure work →</a>
                 </div>
             </div>
         </div>
@@ -324,43 +320,39 @@
     <section class="py-20 px-4">
         <div class="max-w-7xl mx-auto">
             <div class="max-w-3xl mb-12">
-                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-academic-navy mb-3">Skills Overview</p>
-                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Technical and academic capabilities</h2>
-                <p class="text-slate-600 leading-relaxed">
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-academic-navy mb-3" data-i18n="skills.kicker">Skills Overview</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4" data-i18n="skills.title">Technical and academic capabilities</h2>
+                <p class="text-slate-600 leading-relaxed" data-i18n="skills.text">
                     My expertise spans educational technology, software engineering, QA, and institutional infrastructure.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
                 <div class="soft-card p-6">
-                    <h3 class="font-bold text-academic-navy text-lg mb-3">Research & Academic Practice</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">
-                        Design-Based Research, HCI, usability evaluation, accessibility, technology-enhanced learning,
-                        academic supervision, practice-oriented teaching
+                    <h3 class="font-bold text-academic-navy text-lg mb-3" data-i18n="skills.card1.title">Research & Academic Practice</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed" data-i18n="skills.card1.text">
+                        Design-Based Research, HCI, usability evaluation, accessibility, technology-enhanced learning, academic supervision, practice-oriented teaching
                     </p>
                 </div>
 
                 <div class="soft-card p-6">
-                    <h3 class="font-bold text-academic-navy text-lg mb-3">Development</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">
-                        C#, Unity, Java, PHP, Python, JavaScript, MySQL, full-stack information systems,
-                        AR/VR prototyping, interactive application design
+                    <h3 class="font-bold text-academic-navy text-lg mb-3" data-i18n="skills.card2.title">Development</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed" data-i18n="skills.card2.text">
+                        C#, Unity, Java, PHP, Python, JavaScript, MySQL, full-stack information systems, AR/VR prototyping, interactive application design
                     </p>
                 </div>
 
                 <div class="soft-card p-6">
-                    <h3 class="font-bold text-academic-navy text-lg mb-3">Testing & Quality</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">
-                        Selenium, PyTest, JUnit, Unity Test Framework, regression testing, QA workflows,
-                        structured validation in applied software environments
+                    <h3 class="font-bold text-academic-navy text-lg mb-3" data-i18n="skills.card3.title">Testing & Quality</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed" data-i18n="skills.card3.text">
+                        Selenium, PyTest, JUnit, Unity Test Framework, regression testing, QA workflows, structured validation in applied software environments
                     </p>
                 </div>
 
                 <div class="soft-card p-6">
-                    <h3 class="font-bold text-academic-navy text-lg mb-3">Infrastructure & Operations</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">
-                        Active Directory, GPO, DNS, DHCP, Linux and Windows Server,
-                        virtualisation, VLANs, Moodle, web services, monitoring, network analysis
+                    <h3 class="font-bold text-academic-navy text-lg mb-3" data-i18n="skills.card4.title">Infrastructure & Operations</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed" data-i18n="skills.card4.text">
+                        Active Directory, GPO, DNS, DHCP, Linux and Windows Server, virtualisation, VLANs, Moodle, web services, monitoring, network analysis
                     </p>
                 </div>
             </div>
@@ -371,51 +363,48 @@
     <section id="research" class="section-anchor py-20 px-4 bg-white border-y border-slate-200">
         <div class="max-w-7xl mx-auto">
             <div class="max-w-3xl mb-12">
-                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-academic-navy mb-3">Research & Teaching</p>
-                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Research-led development for inclusive digital learning</h2>
-                <p class="text-slate-600 leading-relaxed">
-                    My academic work focuses on accessible XR, digital learning systems, and practical methods
-                    for designing technology that can be used effectively by non-technical educators and diverse learners.
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-academic-navy mb-3" data-i18n="research.kicker">Research & Teaching</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4" data-i18n="research.title">Research-led development for inclusive digital learning</h2>
+                <p class="text-slate-600 leading-relaxed" data-i18n="research.text">
+                    My academic work focuses on accessible XR, digital learning systems, and practical methods for designing technology that can be used effectively by non-technical educators and diverse learners.
                 </p>
             </div>
 
             <div class="grid lg:grid-cols-2 gap-8">
                 <article class="soft-card p-7">
-                    <p class="text-sm font-semibold uppercase tracking-widest text-blue-600 mb-2">Featured Publication</p>
-                    <h3 class="text-xl font-bold mb-3">
+                    <p class="text-sm font-semibold uppercase tracking-widest text-blue-600 mb-2" data-i18n="research.pub.kicker">Featured Publication</p>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="research.pub.title">
                         Integrating Design-Based Research and Agile Scrum for Inclusive Educational Technology Design
                     </h3>
-                    <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                        This publication examines how Design-Based Research and Agile Scrum can be integrated in the
-                        development of accessible educational technology. The study offers a validated methodological
-                        framework for aligning iterative technical implementation with inclusive design and stakeholder feedback.
+                    <p class="text-sm text-slate-600 mb-4 leading-relaxed" data-i18n="research.pub.text">
+                        This publication examines how Design-Based Research and Agile Scrum can be integrated in the development of accessible educational technology.
+                        The study offers a validated methodological framework for aligning iterative technical implementation with inclusive design and stakeholder feedback.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded">DBR</span>
                         <span class="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded">Agile Scrum</span>
-                        <span class="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded">Accessibility</span>
+                        <span class="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded" data-i18n="research.tag.accessibility">Accessibility</span>
                         <span class="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded">EdTech</span>
                     </div>
-                    <a href="https://doi.org/10.3390/multimedia1020006" target="_blank" rel="noopener noreferrer" class="font-semibold text-academic-navy hover:underline">
+                    <a href="https://doi.org/10.3390/multimedia1020006" target="_blank" rel="noopener noreferrer" class="font-semibold text-academic-navy hover:underline" data-i18n="research.pub.link">
                         Read publication →
                     </a>
                 </article>
 
                 <article class="soft-card p-7">
-                    <p class="text-sm font-semibold uppercase tracking-widest text-blue-600 mb-2">Ph.D. Dissertation</p>
-                    <h3 class="text-xl font-bold mb-3">
+                    <p class="text-sm font-semibold uppercase tracking-widest text-blue-600 mb-2" data-i18n="research.phd.kicker">Ph.D. Dissertation</p>
+                    <h3 class="text-xl font-bold mb-3" data-i18n="research.phd.title">
                         Design and Development of an Accessible Open-Source Augmented Reality Learning Authoring Tool
                     </h3>
-                    <p class="text-sm text-slate-600 mb-4 leading-relaxed">
-                        My doctoral research addressed how accessible AR authoring environments can support educators in
-                        creating inclusive learning experiences. The work contributed to open-source XR development,
-                        accessibility practice, and standards-related discourse in immersive learning.
+                    <p class="text-sm text-slate-600 mb-4 leading-relaxed" data-i18n="research.phd.text">
+                        My doctoral research addressed how accessible AR authoring environments can support educators in creating inclusive learning experiences.
+                        The work contributed to open-source XR development, accessibility practice, and standards-related discourse in immersive learning.
                     </p>
                     <div class="space-y-2 text-sm text-slate-700">
-                        <p><strong>Methodological emphasis:</strong> Design-Based Research, Agile Scrum, usability evaluation, inclusive design.</p>
-                        <p><strong>Practical contribution:</strong> Accessible authoring support for non-technical educators and learning content creators.</p>
+                        <p data-i18n="research.phd.method"><strong>Methodological emphasis:</strong> Design-Based Research, Agile Scrum, usability evaluation, inclusive design.</p>
+                        <p data-i18n="research.phd.practice"><strong>Practical contribution:</strong> Accessible authoring support for non-technical educators and learning content creators.</p>
                     </div>
-                    <a href="https://doi.org/10.60848/13109" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 font-semibold text-academic-navy hover:underline">
+                    <a href="https://doi.org/10.60848/13109" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 font-semibold text-academic-navy hover:underline" data-i18n="research.phd.link">
                         View dissertation record →
                     </a>
                 </article>
@@ -425,16 +414,15 @@
                         <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center">
                             <i class="fas fa-chalkboard-teacher"></i>
                         </div>
-                        <h3 class="text-xl font-bold">Applied teaching and supervision</h3>
+                        <h3 class="text-xl font-bold" data-i18n="research.teaching.title">Applied teaching and supervision</h3>
                     </div>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        I have taught in both dual-study and conventional university contexts, with a focus on
-                        applied learning, laboratory-based instruction, software development, and immersive technologies.
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4" data-i18n="research.teaching.text">
+                        I have taught in both dual-study and conventional university contexts, with a focus on applied learning, laboratory-based instruction, software development, and immersive technologies.
                     </p>
                     <ul class="space-y-2 text-sm text-slate-700 list-disc ml-5">
-                        <li>Courses in AR/VR, programming, software development, HCI, and related technical subjects</li>
-                        <li>Supervision of student projects and practice-oriented applied research</li>
-                        <li>Support for experiential learning through laboratory preparation and digital platforms</li>
+                        <li data-i18n="research.teaching.li1">Courses in AR/VR, programming, software development, HCI, and related technical subjects</li>
+                        <li data-i18n="research.teaching.li2">Supervision of student projects and practice-oriented applied research</li>
+                        <li data-i18n="research.teaching.li3">Support for experiential learning through laboratory preparation and digital platforms</li>
                     </ul>
                     <div class="mt-5 flex flex-wrap gap-2">
                         <span class="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded">DHBW Heidenheim</span>
@@ -447,28 +435,27 @@
                         <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center">
                             <i class="fas fa-globe"></i>
                         </div>
-                        <h3 class="text-xl font-bold">International engagement and outreach</h3>
+                        <h3 class="text-xl font-bold" data-i18n="research.outreach.title">International engagement and outreach</h3>
                     </div>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        I participate in scholarly, industrial, and public-facing activities that translate immersive
-                        technology research into practical educational and societal value.
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4" data-i18n="research.outreach.text">
+                        I participate in scholarly, industrial, and public-facing activities that translate immersive technology research into practical educational and societal value.
                     </p>
                     <ul class="space-y-2 text-sm text-slate-700 list-disc ml-5">
-                        <li>Workshops on accessible AR for academic and industry-linked audiences</li>
-                        <li>Research presentations at international conferences and XR-related events</li>
-                        <li>Outreach activities promoting STEM, accessibility, and immersive technology literacy</li>
-                        <li>Service as reviewer and programme committee contributor in academic contexts</li>
+                        <li data-i18n="research.outreach.li1">Workshops on accessible AR for academic and industry-linked audiences</li>
+                        <li data-i18n="research.outreach.li2">Research presentations at international conferences and XR-related events</li>
+                        <li data-i18n="research.outreach.li3">Outreach activities promoting STEM, accessibility, and immersive technology literacy</li>
+                        <li data-i18n="research.outreach.li4">Service as reviewer and programme committee contributor in academic contexts</li>
                     </ul>
                 </article>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8 mt-10">
                 <div class="soft-card p-5">
-                    <p class="text-sm font-semibold uppercase tracking-widest text-blue-600 mb-3">Field and laboratory engagement</p>
+                    <p class="text-sm font-semibold uppercase tracking-widest text-blue-600 mb-3" data-i18n="research.image1">Field and laboratory engagement</p>
                     <img src="images/scanner.jpg" alt="Explaining a 3D scanner" class="w-full h-72 object-cover rounded-xl" />
                 </div>
                 <div class="soft-card p-5">
-                    <p class="text-sm font-semibold uppercase tracking-widest text-blue-600 mb-3">Immersive technology demonstration</p>
+                    <p class="text-sm font-semibold uppercase tracking-widest text-blue-600 mb-3" data-i18n="research.image2">Immersive technology demonstration</p>
                     <img src="images/hololens.jpg" alt="HoloLens demonstration" class="w-full h-72 object-cover rounded-xl" />
                 </div>
             </div>
@@ -479,9 +466,9 @@
     <section id="engineering" class="section-anchor py-20 px-4">
         <div class="max-w-7xl mx-auto">
             <div class="max-w-3xl mb-12">
-                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700 mb-3">Software Engineering</p>
-                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Development with accessibility, reliability, and practical use in mind</h2>
-                <p class="text-slate-600 leading-relaxed">
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700 mb-3" data-i18n="engineering.kicker">Software Engineering</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4" data-i18n="engineering.title">Development with accessibility, reliability, and practical use in mind</h2>
+                <p class="text-slate-600 leading-relaxed" data-i18n="engineering.text">
                     My development work combines applied research, institutional software design, and test-driven quality practices.
                 </p>
             </div>
@@ -491,10 +478,9 @@
                     <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center mb-4">
                         <i class="fas fa-universal-access"></i>
                     </div>
-                    <h3 class="font-bold text-xl mb-3">Accessible XR systems</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        Developed components and concepts for accessible AR authoring tools and immersive learning environments,
-                        with a focus on usability, inclusive interaction, and educational applicability.
+                    <h3 class="font-bold text-xl mb-3" data-i18n="engineering.card1.title">Accessible XR systems</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4" data-i18n="engineering.card1.text">
+                        Developed components and concepts for accessible AR authoring tools and immersive learning environments, with a focus on usability, inclusive interaction, and educational applicability.
                     </p>
                     <div class="flex flex-wrap gap-2">
                         <span class="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded">Unity</span>
@@ -508,10 +494,9 @@
                     <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-4">
                         <i class="fas fa-database"></i>
                     </div>
-                    <h3 class="font-bold text-xl mb-3">Web information systems</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        Designed and implemented institutional systems including student registration and alumni management,
-                        with attention to data structure, maintainability, and end-user workflow.
+                    <h3 class="font-bold text-xl mb-3" data-i18n="engineering.card2.title">Web information systems</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4" data-i18n="engineering.card2.text">
+                        Designed and implemented institutional systems including student registration and alumni management, with attention to data structure, maintainability, and end-user workflow.
                     </p>
                     <div class="flex flex-wrap gap-2">
                         <span class="text-xs bg-emerald-50 text-emerald-700 px-2 py-1 rounded">PHP</span>
@@ -525,10 +510,9 @@
                     <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-700 flex items-center justify-center mb-4">
                         <i class="fas fa-vial-circle-check"></i>
                     </div>
-                    <h3 class="font-bold text-xl mb-3">Automated testing and QA</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                        Built automated testing workflows for web applications and XR-related interfaces to reduce manual effort,
-                        improve regression coverage, and strengthen release confidence.
+                    <h3 class="font-bold text-xl mb-3" data-i18n="engineering.card3.title">Automated testing and QA</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4" data-i18n="engineering.card3.text">
+                        Built automated testing workflows for web applications and XR-related interfaces to reduce manual effort, improve regression coverage, and strengthen release confidence.
                     </p>
                     <div class="flex flex-wrap gap-2">
                         <span class="text-xs bg-purple-50 text-purple-700 px-2 py-1 rounded">Selenium</span>
@@ -545,11 +529,10 @@
     <section id="infrastructure" class="section-anchor py-20 px-4 bg-white border-y border-slate-200">
         <div class="max-w-7xl mx-auto">
             <div class="max-w-3xl mb-12">
-                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-700 mb-3">Infrastructure & Operations</p>
-                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Institutional systems, networks, and operational reliability</h2>
-                <p class="text-slate-600 leading-relaxed">
-                    My infrastructure experience was developed in higher education environments where continuity,
-                    scale, and usability were critical for teaching, administration, and institutional services.
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-700 mb-3" data-i18n="infra.kicker">Infrastructure & Operations</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4" data-i18n="infra.title">Institutional systems, networks, and operational reliability</h2>
+                <p class="text-slate-600 leading-relaxed" data-i18n="infra.text">
+                    My infrastructure experience was developed in higher education environments where continuity, scale, and usability were critical for teaching, administration, and institutional services.
                 </p>
             </div>
 
@@ -559,18 +542,16 @@
                         <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center">
                             <i class="fas fa-network-wired"></i>
                         </div>
-                        <h3 class="font-bold text-xl">Enterprise campus infrastructure</h3>
+                        <h3 class="font-bold text-xl" data-i18n="infra.card1.title">Enterprise campus infrastructure</h3>
                     </div>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-5">
-                        Managed hybrid academic infrastructure supporting more than 3,000 users and hundreds of end devices.
-                        This included server environments, network segmentation, identity services, virtualisation,
-                        and operational support for institutional systems.
+                    <p class="text-sm text-slate-600 leading-relaxed mb-5" data-i18n="infra.card1.text">
+                        Managed hybrid academic infrastructure supporting more than 3,000 users and hundreds of end devices. This included server environments, network segmentation, identity services, virtualisation, and operational support for institutional systems.
                     </p>
                     <div class="grid sm:grid-cols-2 gap-3 text-sm">
-                        <div class="rounded-lg bg-slate-50 border border-slate-200 p-3">Windows and Linux server administration</div>
-                        <div class="rounded-lg bg-slate-50 border border-slate-200 p-3">Active Directory, DNS, DHCP, GPO</div>
-                        <div class="rounded-lg bg-slate-50 border border-slate-200 p-3">VMware, Hyper-V, hybrid environments</div>
-                        <div class="rounded-lg bg-slate-50 border border-slate-200 p-3">Cisco VLANs and secure campus networking</div>
+                        <div class="rounded-lg bg-slate-50 border border-slate-200 p-3" data-i18n="infra.card1.item1">Windows and Linux server administration</div>
+                        <div class="rounded-lg bg-slate-50 border border-slate-200 p-3" data-i18n="infra.card1.item2">Active Directory, DNS, DHCP, GPO</div>
+                        <div class="rounded-lg bg-slate-50 border border-slate-200 p-3" data-i18n="infra.card1.item3">VMware, Hyper-V, hybrid environments</div>
+                        <div class="rounded-lg bg-slate-50 border border-slate-200 p-3" data-i18n="infra.card1.item4">Cisco VLANs and secure campus networking</div>
                     </div>
                 </article>
 
@@ -579,17 +560,16 @@
                         <div class="w-12 h-12 rounded-xl bg-red-50 text-red-700 flex items-center justify-center">
                             <i class="fas fa-shield-halved"></i>
                         </div>
-                        <h3 class="font-bold text-xl">Security, monitoring, and resilience</h3>
+                        <h3 class="font-bold text-xl" data-i18n="infra.card2.title">Security, monitoring, and resilience</h3>
                     </div>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-5">
-                        Contributed to policy, continuity, and security-oriented operations through monitoring,
-                        troubleshooting, and network analysis in active institutional environments.
+                    <p class="text-sm text-slate-600 leading-relaxed mb-5" data-i18n="infra.card2.text">
+                        Contributed to policy, continuity, and security-oriented operations through monitoring, troubleshooting, and network analysis in active institutional environments.
                     </p>
                     <ul class="space-y-2 text-sm text-slate-700 list-disc ml-5">
-                        <li>Network traffic analysis and fault isolation with Wireshark</li>
-                        <li>Service monitoring using Nagios and related operational practices</li>
-                        <li>Support for ICT policy development and disaster recovery planning</li>
-                        <li>Secure gateway, proxy, and content-filtering environments in Linux-based systems</li>
+                        <li data-i18n="infra.card2.li1">Network traffic analysis and fault isolation with Wireshark</li>
+                        <li data-i18n="infra.card2.li2">Service monitoring using Nagios and related operational practices</li>
+                        <li data-i18n="infra.card2.li3">Support for ICT policy development and disaster recovery planning</li>
+                        <li data-i18n="infra.card2.li4">Secure gateway, proxy, and content-filtering environments in Linux-based systems</li>
                     </ul>
                 </article>
             </div>
@@ -600,86 +580,72 @@
     <section id="experience" class="section-anchor py-20 px-4">
         <div class="max-w-6xl mx-auto">
             <div class="max-w-3xl mb-12">
-                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-academic-navy mb-3">Professional Journey</p>
-                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Experience across academia and technical operations</h2>
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-academic-navy mb-3" data-i18n="exp.kicker">Professional Journey</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4" data-i18n="exp.title">Experience across academia and technical operations</h2>
             </div>
 
             <div class="space-y-6">
                 <div class="soft-card p-6 md:p-7">
                     <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-3">
                         <div>
-                            <h3 class="font-bold text-xl">Labor Engineer</h3>
-                            <p class="text-slate-600">DHBW Heidenheim, Germany</p>
+                            <h3 class="font-bold text-xl" data-i18n="exp.item1.title">Labor Engineer</h3>
+                            <p class="text-slate-600" data-i18n="exp.item1.place">DHBW Heidenheim, Germany</p>
                         </div>
-                        <span class="inline-flex items-center rounded-full bg-blue-50 text-blue-700 px-3 py-1 text-sm font-medium">
-                            Jan 2026 – Mar 2026
-                        </span>
+                        <span class="inline-flex items-center rounded-full bg-blue-50 text-blue-700 px-3 py-1 text-sm font-medium">Jan 2026 – Mar 2026</span>
                     </div>
-                    <p class="text-sm text-slate-700 leading-relaxed">
-                        Supported laboratory readiness, system imaging, hardware preparation, and the operation of practical
-                        learning environments, including Data Science and AI laboratory contexts.
+                    <p class="text-sm text-slate-700 leading-relaxed" data-i18n="exp.item1.text">
+                        Supported laboratory readiness, system imaging, hardware preparation, and the operation of practical learning environments, including Data Science and AI laboratory contexts.
                     </p>
                 </div>
 
                 <div class="soft-card p-6 md:p-7">
                     <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-3">
                         <div>
-                            <h3 class="font-bold text-xl">Academic Staff / Research and Teaching</h3>
-                            <p class="text-slate-600">DHBW Heidenheim, Germany</p>
+                            <h3 class="font-bold text-xl" data-i18n="exp.item2.title">Academic Staff / Research and Teaching</h3>
+                            <p class="text-slate-600" data-i18n="exp.item2.place">DHBW Heidenheim, Germany</p>
                         </div>
-                        <span class="inline-flex items-center rounded-full bg-blue-50 text-blue-700 px-3 py-1 text-sm font-medium">
-                            2021 – 2025
-                        </span>
+                        <span class="inline-flex items-center rounded-full bg-blue-50 text-blue-700 px-3 py-1 text-sm font-medium">2021 – 2025</span>
                     </div>
-                    <p class="text-sm text-slate-700 leading-relaxed">
-                        Taught in cloud computing, machine learning, and AR/VR programming; led research and development
-                        activities in accessible educational technology; and supported digital teaching through Moodle and related systems.
+                    <p class="text-sm text-slate-700 leading-relaxed" data-i18n="exp.item2.text">
+                        Taught in cloud computing, machine learning, and AR/VR programming; led research and development activities in accessible educational technology; and supported digital teaching through Moodle and related systems.
                     </p>
                 </div>
 
                 <div class="soft-card p-6 md:p-7">
                     <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-3">
                         <div>
-                            <h3 class="font-bold text-xl">Assistant Lecturer, Computer Science</h3>
-                            <p class="text-slate-600">Ruaha Catholic University, Tanzania</p>
+                            <h3 class="font-bold text-xl" data-i18n="exp.item3.title">Assistant Lecturer, Computer Science</h3>
+                            <p class="text-slate-600" data-i18n="exp.item3.place">Ruaha Catholic University, Tanzania</p>
                         </div>
-                        <span class="inline-flex items-center rounded-full bg-blue-50 text-blue-700 px-3 py-1 text-sm font-medium">
-                            2015 – 2020
-                        </span>
+                        <span class="inline-flex items-center rounded-full bg-blue-50 text-blue-700 px-3 py-1 text-sm font-medium">2015 – 2020</span>
                     </div>
-                    <p class="text-sm text-slate-700 leading-relaxed">
-                        Delivered programming and computing courses, supervised student work, and contributed to curriculum
-                        and institutional systems development in a university environment.
+                    <p class="text-sm text-slate-700 leading-relaxed" data-i18n="exp.item3.text">
+                        Delivered programming and computing courses, supervised student work, and contributed to curriculum and institutional systems development in a university environment.
                     </p>
                 </div>
 
                 <div class="soft-card p-6 md:p-7">
                     <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-3">
                         <div>
-                            <h3 class="font-bold text-xl">Senior Systems Administrator</h3>
-                            <p class="text-slate-600">Ruaha Catholic University, Tanzania</p>
+                            <h3 class="font-bold text-xl" data-i18n="exp.item4.title">Senior Systems Administrator</h3>
+                            <p class="text-slate-600" data-i18n="exp.item4.place">Ruaha Catholic University, Tanzania</p>
                         </div>
-                        <span class="inline-flex items-center rounded-full bg-blue-50 text-blue-700 px-3 py-1 text-sm font-medium">
-                            2006 – 2015
-                        </span>
+                        <span class="inline-flex items-center rounded-full bg-blue-50 text-blue-700 px-3 py-1 text-sm font-medium">2006 – 2015</span>
                     </div>
-                    <p class="text-sm text-slate-700 leading-relaxed">
-                        Designed and operated institutional infrastructure, including network architecture, servers,
-                        web services, security layers, digital learning systems, and support for a large university user base.
+                    <p class="text-sm text-slate-700 leading-relaxed" data-i18n="exp.item4.text">
+                        Designed and operated institutional infrastructure, including network architecture, servers, web services, security layers, digital learning systems, and support for a large university user base.
                     </p>
                 </div>
 
                 <div class="soft-card p-6 md:p-7">
                     <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-3">
                         <div>
-                            <h3 class="font-bold text-xl">Systems Administrator</h3>
-                            <p class="text-slate-600">University of Dar es Salaam, Tanzania</p>
+                            <h3 class="font-bold text-xl" data-i18n="exp.item5.title">Systems Administrator</h3>
+                            <p class="text-slate-600" data-i18n="exp.item5.place">University of Dar es Salaam, Tanzania</p>
                         </div>
-                        <span class="inline-flex items-center rounded-full bg-blue-50 text-blue-700 px-3 py-1 text-sm font-medium">
-                            2002 – 2006
-                        </span>
+                        <span class="inline-flex items-center rounded-full bg-blue-50 text-blue-700 px-3 py-1 text-sm font-medium">2002 – 2006</span>
                     </div>
-                    <p class="text-sm text-slate-700 leading-relaxed">
+                    <p class="text-sm text-slate-700 leading-relaxed" data-i18n="exp.item5.text">
                         Supported faculty-wide IT services, user administration, network operations, and core infrastructure services.
                     </p>
                 </div>
@@ -691,27 +657,27 @@
     <section class="py-20 px-4 bg-white border-y border-slate-200">
         <div class="max-w-6xl mx-auto">
             <div class="max-w-3xl mb-12">
-                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-academic-navy mb-3">Education</p>
-                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Academic qualifications</h2>
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-academic-navy mb-3" data-i18n="edu.kicker">Education</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4" data-i18n="edu.title">Academic qualifications</h2>
             </div>
 
             <div class="grid md:grid-cols-3 gap-6">
                 <div class="soft-card p-6">
-                    <h3 class="font-bold text-lg mb-2">Ph.D. in Agricultural Sciences</h3>
-                    <p class="text-sm text-slate-600 mb-2">University of Hohenheim, Germany</p>
-                    <p class="text-sm text-slate-700">Focus: Accessible AR authoring systems and technology-enhanced learning</p>
+                    <h3 class="font-bold text-lg mb-2" data-i18n="edu.item1.title">Ph.D. in Agricultural Sciences</h3>
+                    <p class="text-sm text-slate-600 mb-2" data-i18n="edu.item1.place">University of Hohenheim, Germany</p>
+                    <p class="text-sm text-slate-700" data-i18n="edu.item1.text">Focus: Accessible AR authoring systems and technology-enhanced learning</p>
                 </div>
 
                 <div class="soft-card p-6">
-                    <h3 class="font-bold text-lg mb-2">M.Sc. in Information and Communication Science</h3>
-                    <p class="text-sm text-slate-600 mb-2">NM-AIST, Tanzania</p>
-                    <p class="text-sm text-slate-700">Advanced study in computing and information systems</p>
+                    <h3 class="font-bold text-lg mb-2" data-i18n="edu.item2.title">M.Sc. in Information and Communication Science</h3>
+                    <p class="text-sm text-slate-600 mb-2" data-i18n="edu.item2.place">NM-AIST, Tanzania</p>
+                    <p class="text-sm text-slate-700" data-i18n="edu.item2.text">Advanced study in computing and information systems</p>
                 </div>
 
                 <div class="soft-card p-6">
-                    <h3 class="font-bold text-lg mb-2">B.Sc. in Computer Science</h3>
-                    <p class="text-sm text-slate-600 mb-2">University of Dar es Salaam, Tanzania</p>
-                    <p class="text-sm text-slate-700">Foundational education in computer science and systems practice</p>
+                    <h3 class="font-bold text-lg mb-2" data-i18n="edu.item3.title">B.Sc. in Computer Science</h3>
+                    <p class="text-sm text-slate-600 mb-2" data-i18n="edu.item3.place">University of Dar es Salaam, Tanzania</p>
+                    <p class="text-sm text-slate-700" data-i18n="edu.item3.text">Foundational education in computer science and systems practice</p>
                 </div>
             </div>
         </div>
@@ -722,11 +688,10 @@
         <div class="max-w-6xl mx-auto">
             <div class="grid lg:grid-cols-2 gap-12">
                 <div>
-                    <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-200 mb-3">Contact</p>
-                    <h2 class="text-3xl sm:text-4xl font-bold mb-6">Open to academic, technical, and collaborative opportunities</h2>
-                    <p class="text-blue-100 leading-relaxed mb-8 max-w-2xl">
-                        I welcome conversations related to applied research, teaching and laboratory support,
-                        software development, quality assurance, IT infrastructure, and accessible digital learning.
+                    <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-200 mb-3" data-i18n="contact.kicker">Contact</p>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6" data-i18n="contact.title">Open to academic, technical, and collaborative opportunities</h2>
+                    <p class="text-blue-100 leading-relaxed mb-8 max-w-2xl" data-i18n="contact.text">
+                        I welcome conversations related to applied research, teaching and laboratory support, software development, quality assurance, infrastructure engineering, and accessible digital learning.
                     </p>
 
                     <div class="space-y-4 text-sm">
@@ -734,7 +699,10 @@
                             <i class="fas fa-envelope text-blue-300 w-5"></i>
                             <a href="mailto:dshidende@gmail.com" class="hover:underline">dshidende@gmail.com</a>
                         </div>
-                        
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-phone text-blue-300 w-5"></i>
+                            <span>+49 1573 8227434</span>
+                        </div>
                         <div class="flex items-center gap-3">
                             <i class="fab fa-linkedin text-blue-300 w-5"></i>
                             <a href="https://www.linkedin.com/in/deoshidende/" target="_blank" rel="noopener noreferrer" class="hover:underline">
@@ -751,10 +719,10 @@
                 </div>
 
                 <div class="bg-white rounded-2xl p-6 shadow-xl text-slate-900">
-                    <h3 class="text-xl font-bold mb-4 text-academic-navy">Send a message</h3>
+                    <h3 class="text-xl font-bold mb-4 text-academic-navy" data-i18n="contact.formTitle">Send a message</h3>
                     <form action="https://formspree.io/f/mbddjjnw" method="POST" class="space-y-4">
                         <div>
-                            <label class="block text-xs font-bold uppercase tracking-wide text-slate-500 mb-1">Full name</label>
+                            <label class="block text-xs font-bold uppercase tracking-wide text-slate-500 mb-1" data-i18n="contact.name">Full name</label>
                             <input
                                 type="text"
                                 name="name"
@@ -763,7 +731,7 @@
                             />
                         </div>
                         <div>
-                            <label class="block text-xs font-bold uppercase tracking-wide text-slate-500 mb-1">Email address</label>
+                            <label class="block text-xs font-bold uppercase tracking-wide text-slate-500 mb-1" data-i18n="contact.email">Email address</label>
                             <input
                                 type="email"
                                 name="_replyto"
@@ -772,7 +740,7 @@
                             />
                         </div>
                         <div>
-                            <label class="block text-xs font-bold uppercase tracking-wide text-slate-500 mb-1">Message</label>
+                            <label class="block text-xs font-bold uppercase tracking-wide text-slate-500 mb-1" data-i18n="contact.message">Message</label>
                             <textarea
                                 name="message"
                                 rows="5"
@@ -786,6 +754,7 @@
                         <button
                             type="submit"
                             class="w-full rounded-xl bg-academic-navy text-white font-bold py-3 hover:bg-academic-navy-dark transition"
+                            data-i18n="contact.send"
                         >
                             Send Message <i class="fas fa-paper-plane ml-2"></i>
                         </button>
@@ -793,11 +762,372 @@
                 </div>
             </div>
 
-            <div class="mt-16 pt-8 border-t border-white/15 text-center text-sm text-blue-200">
+            <div class="mt-16 pt-8 border-t border-white/15 text-center text-sm text-blue-200" data-i18n="footer.copy">
                 © 2026 Dr. Deogratias Shidende · Built with Tailwind CSS
             </div>
         </div>
     </footer>
 
+    <script>
+        const translations = {
+            en: {
+                "nav.about": "About",
+                "nav.pathways": "Profile Pathways",
+                "nav.research": "Research",
+                "nav.engineering": "Engineering",
+                "nav.infrastructure": "Infrastructure",
+                "nav.experience": "Experience",
+                "nav.contact": "Contact",
+
+                "hero.kicker": "Academic Technology · Applied Research · Infrastructure Engineering",
+                "hero.summary": "I work at the intersection of IT infrastructure, applied digital learning, and accessible XR research. My profile combines more than 15 years of enterprise and university systems experience with academic teaching, software development, and research on inclusive immersive technologies.",
+                "hero.tag1": '<i class="fas fa-server mr-2"></i> IT Infrastructure',
+                "hero.tag2": '<i class="fas fa-vr-cardboard mr-2"></i> Accessible XR',
+                "hero.tag3": '<i class="fas fa-graduation-cap mr-2"></i> Teaching & Labs',
+                "hero.tag4": '<i class="fas fa-flask mr-2"></i> Applied Research',
+                "hero.cta1": "Get in touch",
+                "hero.cta2": "ORCID Profile",
+                "hero.cta3": "View Research",
+                "hero.side1": "Wörth am Rhein, Germany",
+                "hero.side2": "English (C1) · German (B2, progressing toward C1)",
+                "hero.side3": "Open to academic, applied research, and technical roles",
+
+                "summary.card1.title": "Applied Research & Teaching",
+                "summary.card1.text": "Research and teaching in accessible XR, digital learning, programming, HCI, and practice-oriented academic supervision.",
+                "summary.card2.title": "Software Engineering",
+                "summary.card2.text": "Development of accessible AR systems, institutional information systems, automated testing pipelines, and user-oriented technical solutions.",
+                "summary.card3.title": "Infrastructure & Operations",
+                "summary.card3.text": "More than 15 years of experience in hybrid infrastructure, Windows/Linux administration, virtualisation, networking, security, and laboratory support.",
+
+                "about.kicker": "Professional Profile",
+                "about.title": "An academic technologist with integrated expertise",
+                "about.p1": "I am an applied researcher, software engineer, lecturer, and senior systems administrator with a career spanning higher education, research environments, and enterprise-scale IT operations. My work is defined by a consistent goal: to connect robust technical systems with practical educational and institutional value.",
+                "about.p2": "My professional foundation was built in infrastructure and systems administration, where I designed and maintained secure hybrid environments, campus networks, identity services, virtualisation platforms, and digital learning systems for large academic communities. This background continues to shape my engineering approach through a strong emphasis on reliability, scalability, and security by design.",
+                "about.p3": "My more recent academic work has focused on the design and development of accessible augmented reality authoring tools for non-technical educators. Through this research, I combined Design-Based Research, Agile Scrum, usability evaluation, and inclusive design principles to create practical solutions for technology-enhanced learning.",
+                "about.p4": "I therefore bring a rare combination of strengths across infrastructure operations, software development, teaching and laboratory support, and research-led innovation.",
+                "about.strengthsTitle": "Selected strengths",
+                "about.s1": "Bridges academic research, teaching, and technical implementation",
+                "about.s2": "Experienced in both strategic systems work and hands-on delivery",
+                "about.s3": "Strong fit for universities, applied labs, digital learning teams, and innovation units",
+                "about.s4": "Combines infrastructure depth with user-centred and accessibility-focused design",
+                "about.stat1": "Years of technical and academic experience",
+                "about.stat2": "Users supported in campus infrastructure",
+                "about.stat3": "Accessible AR authoring systems",
+                "about.stat4Title": "Multi-role",
+                "about.stat4": "Research · Engineering · Infrastructure",
+
+                "pathways.kicker": "Profile Pathways",
+                "pathways.title": "Different audiences can enter through different strengths",
+                "pathways.text": "This portfolio is intentionally structured for academic leaders, technical managers, and research collaborators. Each pathway highlights a different part of my profile while remaining connected to the whole.",
+                "pathways.card1.title": "For academic institutions",
+                "pathways.card1.text": "I contribute to teaching, curriculum support, laboratory preparation, educational technology development, and practice-oriented supervision in applied university contexts.",
+                "pathways.card1.link": "Explore research and teaching →",
+                "pathways.card2.title": "For engineering and product teams",
+                "pathways.card2.text": "I design and implement accessible digital systems, test workflows, interactive XR applications, and information systems with an emphasis on usability and maintainability.",
+                "pathways.card2.link": "Explore software engineering →",
+                "pathways.card3.title": "For infrastructure and operations roles",
+                "pathways.card3.text": "I bring long-standing experience in hybrid university infrastructure, Windows/Linux systems, networking, virtualisation, identity services, monitoring, and operational continuity.",
+                "pathways.card3.link": "Explore infrastructure work →",
+
+                "skills.kicker": "Skills Overview",
+                "skills.title": "Technical and academic capabilities",
+                "skills.text": "My expertise spans educational technology, software engineering, QA, and institutional infrastructure.",
+                "skills.card1.title": "Research & Academic Practice",
+                "skills.card1.text": "Design-Based Research, HCI, usability evaluation, accessibility, technology-enhanced learning, academic supervision, practice-oriented teaching",
+                "skills.card2.title": "Development",
+                "skills.card2.text": "C#, Unity, Java, PHP, Python, JavaScript, MySQL, full-stack information systems, AR/VR prototyping, interactive application design",
+                "skills.card3.title": "Testing & Quality",
+                "skills.card3.text": "Selenium, PyTest, JUnit, Unity Test Framework, regression testing, QA workflows, structured validation in applied software environments",
+                "skills.card4.title": "Infrastructure & Operations",
+                "skills.card4.text": "Active Directory, GPO, DNS, DHCP, Linux and Windows Server, virtualisation, VLANs, Moodle, web services, monitoring, network analysis",
+
+                "research.kicker": "Research & Teaching",
+                "research.title": "Research-led development for inclusive digital learning",
+                "research.text": "My academic work focuses on accessible XR, digital learning systems, and practical methods for designing technology that can be used effectively by non-technical educators and diverse learners.",
+                "research.pub.kicker": "Featured Publication",
+                "research.pub.title": "Integrating Design-Based Research and Agile Scrum for Inclusive Educational Technology Design",
+                "research.pub.text": "This publication examines how Design-Based Research and Agile Scrum can be integrated in the development of accessible educational technology. The study offers a validated methodological framework for aligning iterative technical implementation with inclusive design and stakeholder feedback.",
+                "research.tag.accessibility": "Accessibility",
+                "research.pub.link": "Read publication →",
+                "research.phd.kicker": "Ph.D. Dissertation",
+                "research.phd.title": "Design and Development of an Accessible Open-Source Augmented Reality Learning Authoring Tool",
+                "research.phd.text": "My doctoral research addressed how accessible AR authoring environments can support educators in creating inclusive learning experiences. The work contributed to open-source XR development, accessibility practice, and standards-related discourse in immersive learning.",
+                "research.phd.method": "<strong>Methodological emphasis:</strong> Design-Based Research, Agile Scrum, usability evaluation, inclusive design.",
+                "research.phd.practice": "<strong>Practical contribution:</strong> Accessible authoring support for non-technical educators and learning content creators.",
+                "research.phd.link": "View dissertation record →",
+                "research.teaching.title": "Applied teaching and supervision",
+                "research.teaching.text": "I have taught in both dual-study and conventional university contexts, with a focus on applied learning, laboratory-based instruction, software development, and immersive technologies.",
+                "research.teaching.li1": "Courses in AR/VR, programming, software development, HCI, and related technical subjects",
+                "research.teaching.li2": "Supervision of student projects and practice-oriented applied research",
+                "research.teaching.li3": "Support for experiential learning through laboratory preparation and digital platforms",
+                "research.outreach.title": "International engagement and outreach",
+                "research.outreach.text": "I participate in scholarly, industrial, and public-facing activities that translate immersive technology research into practical educational and societal value.",
+                "research.outreach.li1": "Workshops on accessible AR for academic and industry-linked audiences",
+                "research.outreach.li2": "Research presentations at international conferences and XR-related events",
+                "research.outreach.li3": "Outreach activities promoting STEM, accessibility, and immersive technology literacy",
+                "research.outreach.li4": "Service as reviewer and programme committee contributor in academic contexts",
+                "research.image1": "Field and laboratory engagement",
+                "research.image2": "Immersive technology demonstration",
+
+                "engineering.kicker": "Software Engineering",
+                "engineering.title": "Development with accessibility, reliability, and practical use in mind",
+                "engineering.text": "My development work combines applied research, institutional software design, and test-driven quality practices.",
+                "engineering.card1.title": "Accessible XR systems",
+                "engineering.card1.text": "Developed components and concepts for accessible AR authoring tools and immersive learning environments, with a focus on usability, inclusive interaction, and educational applicability.",
+                "engineering.card2.title": "Web information systems",
+                "engineering.card2.text": "Designed and implemented institutional systems including student registration and alumni management, with attention to data structure, maintainability, and end-user workflow.",
+                "engineering.card3.title": "Automated testing and QA",
+                "engineering.card3.text": "Built automated testing workflows for web applications and XR-related interfaces to reduce manual effort, improve regression coverage, and strengthen release confidence.",
+
+                "infra.kicker": "Infrastructure & Operations",
+                "infra.title": "Institutional systems, networks, and operational reliability",
+                "infra.text": "My infrastructure experience was developed in higher education environments where continuity, scale, and usability were critical for teaching, administration, and institutional services.",
+                "infra.card1.title": "Enterprise campus infrastructure",
+                "infra.card1.text": "Managed hybrid academic infrastructure supporting more than 3,000 users and hundreds of end devices. This included server environments, network segmentation, identity services, virtualisation, and operational support for institutional systems.",
+                "infra.card1.item1": "Windows and Linux server administration",
+                "infra.card1.item2": "Active Directory, DNS, DHCP, GPO",
+                "infra.card1.item3": "VMware, Hyper-V, hybrid environments",
+                "infra.card1.item4": "Cisco VLANs and secure campus networking",
+                "infra.card2.title": "Security, monitoring, and resilience",
+                "infra.card2.text": "Contributed to policy, continuity, and security-oriented operations through monitoring, troubleshooting, and network analysis in active institutional environments.",
+                "infra.card2.li1": "Network traffic analysis and fault isolation with Wireshark",
+                "infra.card2.li2": "Service monitoring using Nagios and related operational practices",
+                "infra.card2.li3": "Support for ICT policy development and disaster recovery planning",
+                "infra.card2.li4": "Secure gateway, proxy, and content-filtering environments in Linux-based systems",
+
+                "exp.kicker": "Professional Journey",
+                "exp.title": "Experience across academia and technical operations",
+                "exp.item1.title": "Labor Engineer",
+                "exp.item1.place": "DHBW Heidenheim, Germany",
+                "exp.item1.text": "Supported laboratory readiness, system imaging, hardware preparation, and the operation of practical learning environments, including Data Science and AI laboratory contexts.",
+                "exp.item2.title": "Academic Staff / Research and Teaching",
+                "exp.item2.place": "DHBW Heidenheim, Germany",
+                "exp.item2.text": "Taught in cloud computing, machine learning, and AR/VR programming; led research and development activities in accessible educational technology; and supported digital teaching through Moodle and related systems.",
+                "exp.item3.title": "Assistant Lecturer, Computer Science",
+                "exp.item3.place": "Ruaha Catholic University, Tanzania",
+                "exp.item3.text": "Delivered programming and computing courses, supervised student work, and contributed to curriculum and institutional systems development in a university environment.",
+                "exp.item4.title": "Senior Systems Administrator",
+                "exp.item4.place": "Ruaha Catholic University, Tanzania",
+                "exp.item4.text": "Designed and operated institutional infrastructure, including network architecture, servers, web services, security layers, digital learning systems, and support for a large university user base.",
+                "exp.item5.title": "Systems Administrator",
+                "exp.item5.place": "University of Dar es Salaam, Tanzania",
+                "exp.item5.text": "Supported faculty-wide IT services, user administration, network operations, and core infrastructure services.",
+
+                "edu.kicker": "Education",
+                "edu.title": "Academic qualifications",
+                "edu.item1.title": "Ph.D. in Agricultural Sciences",
+                "edu.item1.place": "University of Hohenheim, Germany",
+                "edu.item1.text": "Focus: Accessible AR authoring systems and technology-enhanced learning",
+                "edu.item2.title": "M.Sc. in Information and Communication Science",
+                "edu.item2.place": "NM-AIST, Tanzania",
+                "edu.item2.text": "Advanced study in computing and information systems",
+                "edu.item3.title": "B.Sc. in Computer Science",
+                "edu.item3.place": "University of Dar es Salaam, Tanzania",
+                "edu.item3.text": "Foundational education in computer science and systems practice",
+
+                "contact.kicker": "Contact",
+                "contact.title": "Open to academic, technical, and collaborative opportunities",
+                "contact.text": "I welcome conversations related to applied research, teaching and laboratory support, software development, quality assurance, infrastructure engineering, and accessible digital learning.",
+                "contact.formTitle": "Send a message",
+                "contact.name": "Full name",
+                "contact.email": "Email address",
+                "contact.message": "Message",
+                "contact.send": 'Send Message <i class="fas fa-paper-plane ml-2"></i>',
+                "footer.copy": "© 2026 Dr. Deogratias Shidende · Built with Tailwind CSS"
+            },
+
+            de: {
+                "nav.about": "Profil",
+                "nav.pathways": "Profileinstiege",
+                "nav.research": "Forschung",
+                "nav.engineering": "Entwicklung",
+                "nav.infrastructure": "Infrastruktur",
+                "nav.experience": "Berufserfahrung",
+                "nav.contact": "Kontakt",
+
+                "hero.kicker": "Akademische Technologie · Angewandte Forschung · Infrastruktur-Engineering",
+                "hero.summary": "Ich arbeite an der Schnittstelle von IT-Infrastruktur, digitalem Lernen und barrierefreier XR-Forschung. Mein Profil verbindet mehr als 15 Jahre Erfahrung in Unternehmens- und Hochschulsystemen mit akademischer Lehre, Softwareentwicklung und Forschung zu inklusiven immersiven Technologien.",
+                "hero.tag1": '<i class="fas fa-server mr-2"></i> IT-Infrastruktur',
+                "hero.tag2": '<i class="fas fa-vr-cardboard mr-2"></i> Barrierefreie XR',
+                "hero.tag3": '<i class="fas fa-graduation-cap mr-2"></i> Lehre & Labore',
+                "hero.tag4": '<i class="fas fa-flask mr-2"></i> Angewandte Forschung',
+                "hero.cta1": "Kontakt aufnehmen",
+                "hero.cta2": "ORCID-Profil",
+                "hero.cta3": "Forschung ansehen",
+                "hero.side1": "Wörth am Rhein, Deutschland",
+                "hero.side2": "Englisch (C1) · Deutsch (B2, auf dem Weg zu C1)",
+                "hero.side3": "Offen für akademische, forschungsnahe und technische Positionen",
+
+                "summary.card1.title": "Angewandte Forschung & Lehre",
+                "summary.card1.text": "Forschung und Lehre in barrierefreier XR, digitalem Lernen, Programmierung, HCI und praxisorientierter akademischer Betreuung.",
+                "summary.card2.title": "Softwareentwicklung",
+                "summary.card2.text": "Entwicklung barrierefreier AR-Systeme, institutioneller Informationssysteme, automatisierter Testpipelines und nutzerorientierter technischer Lösungen.",
+                "summary.card3.title": "Infrastruktur & Betrieb",
+                "summary.card3.text": "Mehr als 15 Jahre Erfahrung in hybrider Infrastruktur, Windows-/Linux-Administration, Virtualisierung, Netzwerken, Sicherheit und Laborunterstützung.",
+
+                "about.kicker": "Berufliches Profil",
+                "about.title": "Ein Academic Technologist mit integrierter Expertise",
+                "about.p1": "Ich bin angewandter Forscher, Softwareentwickler, Lehrender und Senior Systems Administrator mit beruflicher Erfahrung in Hochschulen, Forschungsumgebungen und IT-Betrieb im größeren Maßstab. Meine Arbeit ist durch ein klares Ziel geprägt: robuste technische Systeme mit praktischem Nutzen für Bildung und Institutionen zu verbinden.",
+                "about.p2": "Mein berufliches Fundament liegt in der Infrastruktur- und Systemadministration. Dort habe ich sichere hybride Umgebungen, Campusnetzwerke, Verzeichnisdienste, Virtualisierungsplattformen und digitale Lernsysteme für große akademische Gemeinschaften entworfen und betrieben. Diese Erfahrung prägt meinen technischen Ansatz bis heute durch einen starken Fokus auf Zuverlässigkeit, Skalierbarkeit und Security by Design.",
+                "about.p3": "Meine jüngere wissenschaftliche Arbeit konzentriert sich auf die Konzeption und Entwicklung barrierefreier Augmented-Reality-Autorensysteme für nicht-technische Lehrende. Dabei habe ich Design-Based Research, Agile Scrum, Usability-Evaluation und Prinzipien inklusiven Designs kombiniert, um praxistaugliche Lösungen für technologiegestütztes Lernen zu entwickeln.",
+                "about.p4": "Dadurch vereine ich in besonderer Weise Kompetenzen in Infrastruktur und Betrieb, Softwareentwicklung, Lehr- und Laborunterstützung sowie forschungsgeleiteter Innovation.",
+                "about.strengthsTitle": "Ausgewählte Stärken",
+                "about.s1": "Verbindet akademische Forschung, Lehre und technische Umsetzung",
+                "about.s2": "Erfahren sowohl in strategischer Systemarbeit als auch in praktischer Umsetzung",
+                "about.s3": "Passend für Hochschulen, angewandte Labore, digitale Lernteams und Innovationseinheiten",
+                "about.s4": "Verbindet tiefe Infrastrukturkompetenz mit nutzerzentriertem und barrierefreiem Design",
+                "about.stat1": "Jahre technischer und akademischer Erfahrung",
+                "about.stat2": "Betreute Nutzerinnen und Nutzer in Campus-Infrastrukturen",
+                "about.stat3": "Barrierefreie AR-Autorensysteme",
+                "about.stat4Title": "Vielseitig",
+                "about.stat4": "Forschung · Entwicklung · Infrastruktur",
+
+                "pathways.kicker": "Profileinstiege",
+                "pathways.title": "Unterschiedliche Zielgruppen finden unterschiedliche Anknüpfungspunkte",
+                "pathways.text": "Dieses Portfolio ist bewusst für akademische Leitungen, technische Verantwortliche und Forschungspartner strukturiert. Jeder Einstieg hebt einen anderen Teil meines Profils hervor, bleibt aber mit dem Gesamtprofil verbunden.",
+                "pathways.card1.title": "Für Hochschulen",
+                "pathways.card1.text": "Ich unterstütze Lehre, Curriculumsarbeit, Laborvorbereitung, die Entwicklung bildungstechnologischer Lösungen und praxisorientierte Betreuung in anwendungsnahen Hochschulkontexten.",
+                "pathways.card1.link": "Forschung und Lehre ansehen →",
+                "pathways.card2.title": "Für Entwicklungs- und Produktteams",
+                "pathways.card2.text": "Ich konzipiere und entwickle barrierefreie digitale Systeme, Testprozesse, interaktive XR-Anwendungen und Informationssysteme mit Fokus auf Usability und Wartbarkeit.",
+                "pathways.card2.link": "Softwareentwicklung ansehen →",
+                "pathways.card3.title": "Für Infrastruktur- und Betriebsrollen",
+                "pathways.card3.text": "Ich bringe langjährige Erfahrung in hybrider Hochschulinfrastruktur, Windows-/Linux-Systemen, Netzwerken, Virtualisierung, Verzeichnisdiensten, Monitoring und Betriebsstabilität mit.",
+                "pathways.card3.link": "Infrastrukturarbeit ansehen →",
+
+                "skills.kicker": "Kompetenzüberblick",
+                "skills.title": "Technische und akademische Fähigkeiten",
+                "skills.text": "Meine Expertise umfasst Bildungstechnologie, Softwareentwicklung, Qualitätssicherung und institutionelle Infrastruktur.",
+                "skills.card1.title": "Forschung & akademische Praxis",
+                "skills.card1.text": "Design-Based Research, HCI, Usability-Evaluation, Barrierefreiheit, technologiegestütztes Lernen, akademische Betreuung, praxisorientierte Lehre",
+                "skills.card2.title": "Entwicklung",
+                "skills.card2.text": "C#, Unity, Java, PHP, Python, JavaScript, MySQL, Full-Stack-Informationssysteme, AR/VR-Prototyping, interaktive Anwendungsentwicklung",
+                "skills.card3.title": "Testen & Qualität",
+                "skills.card3.text": "Selenium, PyTest, JUnit, Unity Test Framework, Regressionstests, QA-Workflows, strukturierte Validierung in angewandten Softwareumgebungen",
+                "skills.card4.title": "Infrastruktur & Betrieb",
+                "skills.card4.text": "Active Directory, GPO, DNS, DHCP, Linux- und Windows-Server, Virtualisierung, VLANs, Moodle, Webdienste, Monitoring, Netzwerkanalyse",
+
+                "research.kicker": "Forschung & Lehre",
+                "research.title": "Forschungsgeleitete Entwicklung für inklusives digitales Lernen",
+                "research.text": "Meine akademische Arbeit konzentriert sich auf barrierefreie XR, digitale Lernsysteme und praxisnahe Methoden zur Gestaltung von Technologien, die von nicht-technischen Lehrenden und unterschiedlichen Lernenden wirksam eingesetzt werden können.",
+                "research.pub.kicker": "Ausgewählte Publikation",
+                "research.pub.title": "Integrating Design-Based Research and Agile Scrum for Inclusive Educational Technology Design",
+                "research.pub.text": "Diese Publikation untersucht, wie Design-Based Research und Agile Scrum in der Entwicklung barrierefreier Bildungstechnologie integriert werden können. Die Studie bietet einen validierten methodischen Rahmen, um iterative technische Umsetzung mit inklusivem Design und Stakeholder-Feedback zu verbinden.",
+                "research.tag.accessibility": "Barrierefreiheit",
+                "research.pub.link": "Publikation lesen →",
+                "research.phd.kicker": "Dissertation",
+                "research.phd.title": "Design and Development of an Accessible Open-Source Augmented Reality Learning Authoring Tool",
+                "research.phd.text": "Meine Doktorarbeit untersuchte, wie barrierefreie AR-Autorensysteme Lehrende dabei unterstützen können, inklusive Lernerfahrungen zu gestalten. Die Arbeit leistete Beiträge zur Open-Source-XR-Entwicklung, zur Barrierefreiheitspraxis und zum standardsbezogenen Diskurs im immersiven Lernen.",
+                "research.phd.method": "<strong>Methodischer Schwerpunkt:</strong> Design-Based Research, Agile Scrum, Usability-Evaluation, inklusives Design.",
+                "research.phd.practice": "<strong>Praktischer Beitrag:</strong> Barrierefreie Autorensysteme für nicht-technische Lehrende und Lerninhaltsentwickler.",
+                "research.phd.link": "Dissertationsnachweis ansehen →",
+                "research.teaching.title": "Angewandte Lehre und Betreuung",
+                "research.teaching.text": "Ich habe sowohl in dualen als auch in klassischen Hochschulkontexten gelehrt, mit einem Schwerpunkt auf anwendungsorientiertem Lernen, laborbasierter Lehre, Softwareentwicklung und immersiven Technologien.",
+                "research.teaching.li1": "Lehrveranstaltungen in AR/VR, Programmierung, Softwareentwicklung, HCI und verwandten technischen Fächern",
+                "research.teaching.li2": "Betreuung studentischer Projekte und praxisorientierter angewandter Forschung",
+                "research.teaching.li3": "Unterstützung erfahrungsorientierten Lernens durch Laborvorbereitung und digitale Plattformen",
+                "research.outreach.title": "Internationale Aktivitäten und Outreach",
+                "research.outreach.text": "Ich beteilige mich an wissenschaftlichen, industriellen und öffentlichkeitsorientierten Aktivitäten, die Forschung zu immersiven Technologien in praktischen Bildungs- und Gesellschaftsnutzen übersetzen.",
+                "research.outreach.li1": "Workshops zu barrierefreier AR für akademische und industrienahe Zielgruppen",
+                "research.outreach.li2": "Forschungspräsentationen auf internationalen Konferenzen und XR-bezogenen Veranstaltungen",
+                "research.outreach.li3": "Outreach-Aktivitäten zur Förderung von MINT, Barrierefreiheit und immersiver Technologiekompetenz",
+                "research.outreach.li4": "Tätigkeit als Reviewer und Mitwirkung in wissenschaftlichen Programmkomitees",
+                "research.image1": "Praxis in Feld- und Laborumgebungen",
+                "research.image2": "Demonstration immersiver Technologien",
+
+                "engineering.kicker": "Softwareentwicklung",
+                "engineering.title": "Entwicklung mit Blick auf Barrierefreiheit, Zuverlässigkeit und praktischen Nutzen",
+                "engineering.text": "Meine Entwicklungsarbeit verbindet angewandte Forschung, institutionelles Softwaredesign und testgestützte Qualitätspraktiken.",
+                "engineering.card1.title": "Barrierefreie XR-Systeme",
+                "engineering.card1.text": "Entwicklung von Komponenten und Konzepten für barrierefreie AR-Autorensysteme und immersive Lernumgebungen mit Fokus auf Usability, inklusiver Interaktion und Bildungsanwendbarkeit.",
+                "engineering.card2.title": "Webbasierte Informationssysteme",
+                "engineering.card2.text": "Konzeption und Entwicklung institutioneller Systeme, darunter Studierendenregistrierung und Alumni-Management, mit Blick auf Datenstruktur, Wartbarkeit und Nutzerprozesse.",
+                "engineering.card3.title": "Automatisiertes Testen und QA",
+                "engineering.card3.text": "Aufbau automatisierter Test-Workflows für Webanwendungen und XR-bezogene Oberflächen zur Reduktion manuellen Aufwands, Verbesserung der Regressionsabdeckung und Erhöhung der Release-Sicherheit.",
+
+                "infra.kicker": "Infrastruktur & Betrieb",
+                "infra.title": "Institutionelle Systeme, Netzwerke und betriebliche Zuverlässigkeit",
+                "infra.text": "Meine Infrastrukturerfahrung entstand in Hochschulumgebungen, in denen Kontinuität, Skalierung und Nutzbarkeit für Lehre, Verwaltung und institutionelle Dienste zentral waren.",
+                "infra.card1.title": "Campus-Infrastruktur im institutionellen Maßstab",
+                "infra.card1.text": "Verantwortung für hybride akademische Infrastruktur mit mehr als 3.000 Nutzenden und Hunderten Endgeräten. Dazu gehörten Serverumgebungen, Netzwerksegmentierung, Verzeichnisdienste, Virtualisierung und betriebliche Unterstützung institutioneller Systeme.",
+                "infra.card1.item1": "Administration von Windows- und Linux-Servern",
+                "infra.card1.item2": "Active Directory, DNS, DHCP, GPO",
+                "infra.card1.item3": "VMware, Hyper-V, hybride Umgebungen",
+                "infra.card1.item4": "Cisco-VLANs und sichere Campus-Netzwerke",
+                "infra.card2.title": "Sicherheit, Monitoring und Resilienz",
+                "infra.card2.text": "Beitrag zu Richtlinien, Betriebskontinuität und sicherheitsorientierten Abläufen durch Monitoring, Fehlersuche und Netzwerkanalyse in aktiven institutionellen Umgebungen.",
+                "infra.card2.li1": "Analyse des Netzwerkverkehrs und Fehlerisolierung mit Wireshark",
+                "infra.card2.li2": "Service-Monitoring mit Nagios und verwandten Betriebspraktiken",
+                "infra.card2.li3": "Unterstützung bei der Entwicklung von ICT-Richtlinien und Disaster-Recovery-Planung",
+                "infra.card2.li4": "Sichere Gateway-, Proxy- und Content-Filtering-Umgebungen auf Linux-Basis",
+
+                "exp.kicker": "Beruflicher Werdegang",
+                "exp.title": "Erfahrung in akademischen und technischen Einsatzfeldern",
+                "exp.item1.title": "Laboringenieur",
+                "exp.item1.place": "DHBW Heidenheim, Deutschland",
+                "exp.item1.text": "Unterstützung der Laborbereitschaft, Systemabbilderstellung, Hardwarevorbereitung und des Betriebs praktischer Lernumgebungen, einschließlich Data-Science- und AI-Laboren.",
+                "exp.item2.title": "Akademischer Mitarbeiter / Forschung und Lehre",
+                "exp.item2.place": "DHBW Heidenheim, Deutschland",
+                "exp.item2.text": "Lehre in Cloud Computing, Machine Learning und AR/VR-Programmierung; Leitung von Forschungs- und Entwicklungsaktivitäten in barrierefreier Bildungstechnologie; Unterstützung digitaler Lehre durch Moodle und verwandte Systeme.",
+                "exp.item3.title": "Assistant Lecturer, Informatik",
+                "exp.item3.place": "Ruaha Catholic University, Tansania",
+                "exp.item3.text": "Durchführung von Lehrveranstaltungen in Programmierung und Informatik, Betreuung von Studierenden sowie Mitwirkung an Curriculumsarbeit und institutioneller Systementwicklung im Hochschulkontext.",
+                "exp.item4.title": "Senior Systems Administrator",
+                "exp.item4.place": "Ruaha Catholic University, Tansania",
+                "exp.item4.text": "Konzeption und Betrieb institutioneller Infrastruktur, einschließlich Netzwerkarchitektur, Servern, Webdiensten, Sicherheitsschichten, digitalen Lernsystemen und IT-Unterstützung für eine große Hochschulnutzerschaft.",
+                "exp.item5.title": "Systems Administrator",
+                "exp.item5.place": "University of Dar es Salaam, Tansania",
+                "exp.item5.text": "Unterstützung fakultätsweiter IT-Dienste, Nutzerverwaltung, Netzwerkbetrieb und zentraler Infrastrukturdienste.",
+
+                "edu.kicker": "Ausbildung",
+                "edu.title": "Akademische Qualifikationen",
+                "edu.item1.title": "Ph.D. in Agrarwissenschaften",
+                "edu.item1.place": "Universität Hohenheim, Deutschland",
+                "edu.item1.text": "Schwerpunkt: Barrierefreie AR-Autorensysteme und technologiegestütztes Lernen",
+                "edu.item2.title": "M.Sc. in Information and Communication Science",
+                "edu.item2.place": "NM-AIST, Tansania",
+                "edu.item2.text": "Vertiefte Ausbildung in Computing und Informationssystemen",
+                "edu.item3.title": "B.Sc. in Informatik",
+                "edu.item3.place": "University of Dar es Salaam, Tansania",
+                "edu.item3.text": "Grundlegende Ausbildung in Informatik und Systempraxis",
+
+                "contact.kicker": "Kontakt",
+                "contact.title": "Offen für akademische, technische und kooperative Möglichkeiten",
+                "contact.text": "Ich freue mich über Gespräche zu angewandter Forschung, Lehr- und Laborunterstützung, Softwareentwicklung, Qualitätssicherung, Infrastruktur-Engineering und barrierefreiem digitalem Lernen.",
+                "contact.formTitle": "Nachricht senden",
+                "contact.name": "Vollständiger Name",
+                "contact.email": "E-Mail-Adresse",
+                "contact.message": "Nachricht",
+                "contact.send": 'Nachricht senden <i class="fas fa-paper-plane ml-2"></i>',
+                "footer.copy": "© 2026 Dr. Deogratias Shidende · Erstellt mit Tailwind CSS"
+            }
+        };
+
+        let currentLang = "en";
+
+        function applyTranslations(lang) {
+            document.documentElement.lang = lang;
+
+            document.querySelectorAll("[data-i18n]").forEach(el => {
+                const key = el.getAttribute("data-i18n");
+                const value = translations[lang][key];
+                if (value !== undefined) {
+                    el.innerHTML = value;
+                }
+            });
+
+            document.getElementById("langToggleText").textContent = lang === "en" ? "DE" : "EN";
+            document.title = lang === "en"
+                ? "Dr. Deogratias Shidende | Academic Technology Portfolio"
+                : "Dr. Deogratias Shidende | Portfolio für akademische Technologie";
+        }
+
+        document.getElementById("langToggle").addEventListener("click", () => {
+            currentLang = currentLang === "en" ? "de" : "en";
+            applyTranslations(currentLang);
+        });
+
+        applyTranslations(currentLang);
+    </script>
 </body>
 </html>
