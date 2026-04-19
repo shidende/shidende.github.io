@@ -1,480 +1,801 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Deogratias Shidende | Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Deogratias Shidende | Academic Technology Portfolio</title>
+    <meta
+        name="description"
+        content="Portfolio of Dr. Deogratias Shidende — Academic Technologist specializing in IT infrastructure, accessible XR systems, digital learning, and applied research."
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <style>
-        .academic-navy {
-            background-color: #002366;
+        :root {
+            --academic-navy: #002366;
+            --academic-navy-dark: #001a4d;
+            --academic-gold: #c7a74a;
         }
 
-        .text-academic-navy {
-            color: #002366;
+        .bg-academic-navy { background-color: var(--academic-navy); }
+        .bg-academic-navy-dark { background-color: var(--academic-navy-dark); }
+        .text-academic-navy { color: var(--academic-navy); }
+        .text-academic-gold { color: var(--academic-gold); }
+        .border-academic-navy { border-color: var(--academic-navy); }
+        .border-academic-gold { border-color: var(--academic-gold); }
+
+        .section-anchor {
+            scroll-margin-top: 96px;
+        }
+
+        .soft-card {
+            background: white;
+            border: 1px solid rgb(226 232 240);
+            border-radius: 1rem;
+            box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
         }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-slate-50 text-slate-900 antialiased">
 
-    <nav class="sticky top-0 z-50 bg-white shadow-md border-b-4 border-academic-navy">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <span class="text-xl font-bold text-academic-navy uppercase tracking-tight">Dr. Deogratias Shidende</span>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#about" class="hover:text-blue-700 font-medium">About</a>
-                    <a href="#research" class="hover:text-blue-700 font-medium">Research</a>
-                    <a href="#engineering" class="hover:text-blue-700 font-medium">Engineering</a>
-                    <a href="#infrastructure" class="hover:text-blue-700 font-medium">Infrastructure</a>
-                    <a href="#contact" class="hover:text-blue-700 font-medium">Contact</a>
+            <div class="h-16 flex items-center justify-between">
+                <a href="#top" class="font-bold tracking-tight text-academic-navy text-lg sm:text-xl">
+                    Dr. Deogratias Shidende
+                </a>
+
+                <div class="hidden md:flex items-center gap-7 text-sm font-medium">
+                    <a href="#about" class="hover:text-academic-navy transition">About</a>
+                    <a href="#pathways" class="hover:text-academic-navy transition">Profile Pathways</a>
+                    <a href="#research" class="hover:text-academic-navy transition">Research</a>
+                    <a href="#engineering" class="hover:text-academic-navy transition">Engineering</a>
+                    <a href="#infrastructure" class="hover:text-academic-navy transition">Infrastructure</a>
+                    <a href="#experience" class="hover:text-academic-navy transition">Experience</a>
+                    <a href="#contact" class="hover:text-academic-navy transition">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <header class="academic-navy text-white py-20 px-4">
-        <div class="max-w-5xl mx-auto text-center">
-            <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Dr. Deogratias Mashinagwi Shidende</h1>
-            <p class="text-xl md:text-2xl font-light text-blue-100 max-w-3xl mx-auto mb-8">
-                Bridging Immersive Research and Enterprise Execution: Ph.D. Researcher & Senior IT Engineer specializing in Accessible XR Systems and Infrastructure.
-            </p>
-            <div class="flex justify-center space-x-4">
-                <a href="#contact" class="bg-white text-academic-navy px-6 py-3 rounded-md font-bold hover:bg-gray-100 transition">Get In Touch</a>
-                <a href="https://orcid.org/0000-0002-2181-958X" target="_blank" class="border border-white px-6 py-3 rounded-md font-bold hover:bg-white hover:text-academic-navy transition">ORCID Profile</a>
+    <!-- Hero -->
+    <header id="top" class="bg-academic-navy text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-8">
+                    <p class="uppercase tracking-[0.22em] text-blue-200 text-xs sm:text-sm font-semibold mb-4">
+                        Academic Technology · Applied Research · Infrastructure Engineering
+                    </p>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                        Dr. Deogratias Mashinagwi Shidende
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-blue-100 leading-relaxed max-w-4xl mb-8">
+                        I work at the intersection of <strong>IT infrastructure</strong>,
+                        <strong>applied digital learning</strong>, and <strong>accessible XR research</strong>.
+                        My profile combines more than 15 years of enterprise and university systems experience
+                        with academic teaching, software development, and research on inclusive immersive technologies.
+                    </p>
+
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <span class="inline-flex items-center px-3 py-2 rounded-full bg-white/10 border border-white/20 text-sm">
+                            <i class="fas fa-server mr-2"></i> IT Infrastructure
+                        </span>
+                        <span class="inline-flex items-center px-3 py-2 rounded-full bg-white/10 border border-white/20 text-sm">
+                            <i class="fas fa-vr-cardboard mr-2"></i> Accessible XR
+                        </span>
+                        <span class="inline-flex items-center px-3 py-2 rounded-full bg-white/10 border border-white/20 text-sm">
+                            <i class="fas fa-graduation-cap mr-2"></i> Teaching & Labs
+                        </span>
+                        <span class="inline-flex items-center px-3 py-2 rounded-full bg-white/10 border border-white/20 text-sm">
+                            <i class="fas fa-flask mr-2"></i> Applied Research
+                        </span>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="inline-flex items-center bg-white text-academic-navy px-6 py-3 rounded-xl font-bold hover:bg-slate-100 transition">
+                            Get in touch
+                        </a>
+                        <a href="https://orcid.org/0000-0002-2181-958X" target="_blank" rel="noopener noreferrer" class="inline-flex items-center border border-white/40 px-6 py-3 rounded-xl font-bold hover:bg-white hover:text-academic-navy transition">
+                            ORCID Profile
+                        </a>
+                        <a href="#research" class="inline-flex items-center border border-white/20 px-6 py-3 rounded-xl font-bold hover:bg-white/10 transition">
+                            View Research
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-4">
+                    <div class="bg-white/10 border border-white/15 rounded-2xl p-6 backdrop-blur">
+                        <div class="w-44 h-44 mx-auto rounded-2xl overflow-hidden border-4 border-white/20 shadow-xl mb-6">
+                            <img
+                                src="images/profile_portrait.jpg"
+                                alt="Portrait of Dr. Deogratias Shidende"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+
+                        <div class="space-y-4 text-sm text-blue-50">
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-location-dot mt-1 text-academic-gold"></i>
+                                <span>Wörth am Rhein, Germany</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-language mt-1 text-academic-gold"></i>
+                                <span>English (C1) · German (B2, progressing toward C1)</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-building-columns mt-1 text-academic-gold"></i>
+                                <span>Open to academic, applied research, and technical roles</span>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-link mt-1 text-academic-gold"></i>
+                                <a href="https://shidende.github.io/" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                                    shidende.github.io
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
-    <section id="about" class="py-16 bg-white px-4">
-        <div class="max-w-5xl mx-auto">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="w-64 h-64 shrink-0 rounded-2xl border-4 border-academic-navy overflow-hidden shadow-xl">
-                    <img src="images/profile_portrait.jpg" alt="Dr. Deogratias Shidende" class="w-full h-full object-cover">
-                </div>
 
-                <div>
-                    <h2 class="text-3xl font-bold text-academic-navy mb-6">Professional Profile</h2>
-                    <div class="space-y-4 text-gray-700 leading-relaxed">
-                        <p>
-                            I am an applied researcher, software engineer, and senior systems administrator with over 15 years of experience bridging the gap between complex technical infrastructure and user-centric digital innovation. My career is defined by a dual commitment: ensuring the <strong>robustness of enterprise systems</strong> and advancing the <strong>accessibility of immersive technologies</strong>.
-                        </p>
-                        <p>
-                            During my tenure at <strong>Ruaha Catholic University (RUCU)</strong>, I led technical teams in architecting secure, scalable networks for over 3,000 users. This deep-rooted expertise in systems administration informs my current work in software engineering, where I apply a "security-by-design" and "accessibility-first" philosophy to full-stack development and automated QA.
-                        </p>
-                        <p>
-                            My recent <strong>Ph.D. research at the University of Hohenheim</strong> focused on creating inclusive Augmented Reality (AR) authoring tools. By integrating Design-Based Research with Agile Scrum, I developed solutions that empower non-technical educators to build accessible learning experiences. I am dedicated to fostering digital transformation through interdisciplinary collaboration—from the server room to the research lab.
-                        </p>
+    <!-- Key summary -->
+    <section class="bg-white border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="soft-card p-6">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center mb-4">
+                        <i class="fas fa-microscope text-xl"></i>
                     </div>
-
-                    <div class="grid grid-cols-2 gap-4 mt-8">
-                        <div class="flex items-center space-x-2 p-3 bg-slate-50 rounded border border-slate-100">
-                            <i class="fas fa-language text-blue-600"></i>
-                            <span class="text-sm font-medium text-slate-700">English (C1) & German (B2)</span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-16 px-4 max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-blue-500">
-                <i class="fas fa-microscope text-3xl text-blue-500 mb-4"></i>
-                <h3 class="text-xl font-bold mb-2">Applied Research & Lecturing</h3>
-                <p class="text-gray-600 text-sm">Design and evaluation of accessible XR systems for inclusive education. Expert in Human-Computer Interaction and Usability. Object Oriented Programming (C#, C++, Java and Python)</p>
-            </div>
-            <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-green-500">
-                <i class="fas fa-code text-3xl text-green-500 mb-4"></i>
-                <h3 class="text-xl font-bold mb-2">Software Engineering & QA</h3>
-                <p class="text-gray-600 text-sm">Full-stack development and automated QA (Selenium, PyTest). Specialist in Agile Scrum and CI/CD pipelines.</p>
-            </div>
-            <div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-academic-navy">
-                <i class="fas fa-server text-3xl text-academic-navy mb-4"></i>
-                <h3 class="text-xl font-bold mb-2">IT Systems Administration</h3>
-                <p class="text-gray-600 text-sm">15+ years architecting secure hybrid campus networks (Windows/Linux) and managing large-scale infrastructure.</p>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="bg-gray-100 py-16 px-4">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">Technical Skills Matrix</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="bg-white p-4 rounded shadow text-center">
-                    <h4 class="font-bold text-academic-navy">Academic</h4>
-                    <p class="text-sm">Software Engineering, OOP, HCI, DBR, XR Accessibility, TEL</p>
-                </div>
-                <div class="bg-white p-4 rounded shadow text-center">
-                    <h4 class="font-bold text-academic-navy">Development</h4>
-                    <p class="text-sm">Java, C#, Unity3D, PhP, Python, JavaScript</p>
-                </div>
-                <div class="bg-white p-4 rounded shadow text-center">
-                    <h4 class="font-bold text-academic-navy">QA & Testing</h4>
-                    <p class="text-sm">Selenium, JUnit, PyTest, CI/CD </p>
-                </div>
-                <div class="bg-white p-4 rounded shadow text-center">
-                    <h4 class="font-bold text-academic-navy">Infrastructure</h4>
-                    <p class="text-sm">Active Directory, Linux/Windows Server, VLANs</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="research" class="py-16 px-4 max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold border-l-8 border-blue-500 pl-4 mb-8">Research, Publications & Lecturing</h2>
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="border p-6 rounded bg-white">
-                <span class="text-blue-500 font-bold">Latest Publication</span>
-                <h4 class="font-bold mt-2">Integrating Design-Based Research and Agile Scrum for Inclusive Educational Technology Design (2025)</h4>
-                <div class="bg-gray-200 border-dashed border-2 p-4 text-center text-gray-500 mt-4 rounded">
-                    <p class="text-sm text-gray-700 mt-4 leading-relaxed">
-                        This case study explores the integration of <strong>Design-Based Research (DBR)</strong> and <strong>Agile Scrum</strong> to develop an accessible AR authoring tool. By aligning research evaluation with sprint cycles, the project identified best practices for early stakeholder engagement and accessibility-focused development, offering a validated framework for creating inclusive multimedia systems.
+                    <h2 class="font-bold text-xl mb-2">Applied Research & Teaching</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Research and teaching in accessible XR, digital learning, programming, HCI, and practice-oriented academic supervision.
                     </p>
-                    <a href="https://doi.org/10.3390/multimedia1020006" target="_blank" class="inline-block mt-4 text-blue-600 hover:underline text-sm font-medium">Read Full Paper (MDPI) →</a>
+                </div>
+
+                <div class="soft-card p-6">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-4">
+                        <i class="fas fa-code text-xl"></i>
+                    </div>
+                    <h2 class="font-bold text-xl mb-2">Software Engineering</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Development of accessible AR systems, institutional information systems, automated testing pipelines, and user-oriented technical solutions.
+                    </p>
+                </div>
+
+                <div class="soft-card p-6">
+                    <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center mb-4">
+                        <i class="fas fa-network-wired text-xl"></i>
+                    </div>
+                    <h2 class="font-bold text-xl mb-2">Infrastructure & Operations</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        More than 15 years of experience in hybrid infrastructure, Windows/Linux administration, virtualisation, networking, security, and laboratory support.
+                    </p>
                 </div>
             </div>
-            <div class="border p-6 rounded bg-white">
-                <span class="text-blue-500 font-bold">Ph.D. Dissertation</span>
-                <h4 class="font-bold mt-2">Design and Development of an Accessible Open-Source Augmented Reality Learning Authoring Tool for Applications in Agroecological Settings</h4>
-                <div class="mt-4 text-sm text-gray-700 space-y-3">
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section-anchor py-20 px-4">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-10 items-start">
+            <div class="lg:col-span-7">
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-academic-navy mb-3">Professional Profile</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6">An academic technologist with integrated expertise</h2>
+
+                <div class="space-y-5 text-slate-700 leading-relaxed">
                     <p>
-                        <strong>Methodology:</strong> Integrated <strong>Design-Based Research (DBR)</strong> with <strong>Agile Scrum</strong> to iterate on the MirageXR open-source tool. The approach combined usability engineering with systematic accessibility evaluations to ensure inclusive design for non-technical creators.
+                        I am an applied researcher, software engineer, lecturer, and senior systems administrator
+                        with a career spanning higher education, research environments, and enterprise-scale IT operations.
+                        My work is defined by a consistent goal: to connect robust technical systems with practical
+                        educational and institutional value.
                     </p>
                     <p>
-                        <strong>Impact:</strong> Contributed to the <strong>CEN Workshop Agreement (CWA 18006)</strong> for XR learning standards. The research provides a scalable framework for inclusive AR in agroecology, enabling educators to create accessible learning journeys that bridge the digital divide.
+                        My professional foundation was built in infrastructure and systems administration, where I
+                        designed and maintained secure hybrid environments, campus networks, identity services,
+                        virtualisation platforms, and digital learning systems for large academic communities.
+                        This background continues to shape my engineering approach through a strong emphasis on
+                        reliability, scalability, and security by design.
+                    </p>
+                    <p>
+                        My more recent academic work has focused on the design and development of accessible
+                        augmented reality authoring tools for non-technical educators. Through this research,
+                        I combined <strong>Design-Based Research</strong>, <strong>Agile Scrum</strong>,
+                        usability evaluation, and inclusive design principles to create practical solutions for
+                        technology-enhanced learning.
+                    </p>
+                    <p>
+                        I therefore bring a rare combination of strengths across
+                        <strong>infrastructure operations</strong>,
+                        <strong>software development</strong>,
+                        <strong>teaching and laboratory support</strong>, and
+                        <strong>research-led innovation</strong>.
                     </p>
                 </div>
-                <a href="https://doi.org/10.60848/13109" target="_blank" class="inline-block mt-4 text-blue-600 hover:underline text-sm font-medium">View Dissertation Record →</a>
             </div>
-            <div class="border p-6 rounded bg-white shadow-sm hover:shadow-md transition border-l-4 border-blue-400">
-                <div class="flex items-center mb-4">
-                    <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center mr-3">
-                        <i class="fas fa-chalkboard-teacher"></i>
+
+            <div class="lg:col-span-5">
+                <div class="soft-card p-6">
+                    <h3 class="font-bold text-xl mb-5 text-academic-navy">Selected strengths</h3>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-emerald-600 mt-1"></i>
+                            <p class="text-sm text-slate-700">Bridges academic research, teaching, and technical implementation</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-emerald-600 mt-1"></i>
+                            <p class="text-sm text-slate-700">Experienced in both strategic systems work and hands-on delivery</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-emerald-600 mt-1"></i>
+                            <p class="text-sm text-slate-700">Strong fit for universities, applied labs, digital learning teams, and innovation units</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-emerald-600 mt-1"></i>
+                            <p class="text-sm text-slate-700">Combines infrastructure depth with user-centred and accessibility-focused design</p>
+                        </div>
                     </div>
-                    <h4 class="font-bold text-lg">Applied Lecturing & Mentorship</h4>
+
+                    <div class="mt-8 grid sm:grid-cols-2 gap-4">
+                        <div class="rounded-xl bg-slate-50 p-4 border border-slate-200">
+                            <p class="text-2xl font-bold text-academic-navy">15+</p>
+                            <p class="text-xs uppercase tracking-wider text-slate-500 mt-1">Years of technical and academic experience</p>
+                        </div>
+                        <div class="rounded-xl bg-slate-50 p-4 border border-slate-200">
+                            <p class="text-2xl font-bold text-academic-navy">3,000+</p>
+                            <p class="text-xs uppercase tracking-wider text-slate-500 mt-1">Users supported in campus infrastructure</p>
+                        </div>
+                        <div class="rounded-xl bg-slate-50 p-4 border border-slate-200">
+                            <p class="text-2xl font-bold text-academic-navy">Ph.D.</p>
+                            <p class="text-xs uppercase tracking-wider text-slate-500 mt-1">Accessible AR authoring systems</p>
+                        </div>
+                        <div class="rounded-xl bg-slate-50 p-4 border border-slate-200">
+                            <p class="text-2xl font-bold text-academic-navy">Multi-role</p>
+                            <p class="text-xs uppercase tracking-wider text-slate-500 mt-1">Research · Engineering · Infrastructure</p>
+                        </div>
+                    </div>
                 </div>
-                <p class="text-sm text-gray-700 mb-4">
-                    University lecturer specializing in practice-oriented teaching and mentorship. With a proven track record across both dual-study and conventional university systems, I have delivered courses in <strong>AR/VR, programming, Human-Computer Interaction (HCI), and software development</strong>. I have successfully supervised numerous Bachelor’s capstone projects and M.Sc. applied research theses, maintaining a consistent focus on experiential, practice-led learning.
+            </div>
+        </div>
+    </section>
+
+    <!-- Pathways -->
+    <section id="pathways" class="section-anchor py-20 px-4 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="max-w-3xl mb-12">
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-academic-navy mb-3">Profile Pathways</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Different audiences can enter through different strengths</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    This portfolio is intentionally structured for academic leaders, technical managers,
+                    and research collaborators. Each pathway highlights a different part of my profile
+                    while remaining connected to the whole.
                 </p>
-                <div class="space-y-2">
-                    <div class="flex items-center text-xs text-gray-600">
-                        <span class="w-24 font-bold uppercase text-blue-500">Core Labs:</span>
-                        <span>Augmented Reality, Java, Web Systems</span>
-                    </div>
-                    <div class="flex items-center text-xs text-gray-600">
-                        <span class="w-24 font-bold uppercase text-blue-500">Mentorship:</span>
-                        <span>M.Sc. Supervision</span>
-                    </div>
-                </div>
-                <div class="space-y-3 mb-4">
-                    <div class="bg-blue-50 p-3 rounded">
-                        <h5 class="text-xs font-bold text-blue-800 uppercase mb-1 italic">Selected Project Supervision:</h5>
-                        <ul class="text-xs text-gray-700 list-disc ml-4 space-y-1">
-                            <li><strong>MSc Group Project</strong> Accessible augmented reality chemistry lab. The AR-based virtual lab for secondary school students in Tanzania</li>
-                            <li><strong>MSc Dissertation</strong> Development of an accessible augmented reality application to enhance indoor navigation: a case of higher learning institutions <strong>(Frank Samson, 2024)</strong></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="mt-4 pt-4 border-t border-gray-100 flex flex-wrap gap-2">
-                    <span class="text-[10px] bg-blue-50 text-blue-700 px-2 py-1 rounded">DHBW Heidenheim</span>
-                    <span class="text-[10px] bg-blue-50 text-blue-700 px-2 py-1 rounded">RUCU Tanzania</span>
-                </div>
             </div>
-            <div class="border p-6 rounded bg-white shadow-sm hover:shadow-md transition border-l-4 border-blue-400">
-                <div class="flex items-center mb-4">
-                    <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-full flex items-center justify-center mr-3">
-                        <i class="fas fa-globe-africa"></i>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="soft-card p-6">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center mb-4">
+                        <i class="fas fa-building-columns"></i>
                     </div>
-                    <h4 class="font-bold text-lg">International Engagement & Workshops</h4>
+                    <h3 class="font-bold text-xl mb-3">For academic institutions</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        I contribute to teaching, curriculum support, laboratory preparation, educational technology development,
+                        and practice-oriented supervision in applied university contexts.
+                    </p>
+                    <a href="#research" class="text-sm font-semibold text-academic-navy hover:underline">Explore research and teaching →</a>
                 </div>
 
-                <p class="text-sm text-gray-700 mb-4">
-                    I facilitate specialized workshops that bridge the gap between XR research and real-world application for both academic and industrial partners across international conferences and social outreach initiatives. By translating complex immersive technologies into practical, accessible solutions, I foster cross-sector collaboration and ensure that academic innovations drive tangible value in industrial and community contexts.
+                <div class="soft-card p-6">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">For engineering and product teams</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        I design and implement accessible digital systems, test workflows, interactive XR applications,
+                        and information systems with an emphasis on usability and maintainability.
+                    </p>
+                    <a href="#engineering" class="text-sm font-semibold text-academic-navy hover:underline">Explore software engineering →</a>
+                </div>
+
+                <div class="soft-card p-6">
+                    <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">For infrastructure and operations roles</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        I bring long-standing experience in hybrid university infrastructure, Windows/Linux systems,
+                        networking, virtualisation, identity services, monitoring, and operational continuity.
+                    </p>
+                    <a href="#infrastructure" class="text-sm font-semibold text-academic-navy hover:underline">Explore infrastructure work →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="max-w-3xl mb-12">
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-academic-navy mb-3">Skills Overview</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Technical and academic capabilities</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    My expertise spans educational technology, software engineering, QA, and institutional infrastructure.
                 </p>
-
-                <div class="space-y-3 mb-4">
-                    <div class="bg-blue-50 p-3 rounded">
-                        <h5 class="text-xs font-bold text-blue-800 uppercase mb-1 italic">Key Workshops & Outreach:</h5>
-                        <ul class="text-xs text-gray-700 list-disc ml-4 space-y-1">
-                            <li><strong>Industry Collaboration:</strong> Led "Creating Accessible AR" workshops for <strong>Voith</strong> and <strong>Kolpingwerk</strong> at the AuReLiA Lab.</li>
-                            <li><strong>International Scholarly Service:</strong> Technical Program Committee (TPC) member and reviewer for the <strong>5th Asia Education Technology Symposium (AETS 2025)</strong>.</li>
-                            <li><strong>Agroecological Training:</strong> Facilitated XR workshops for international agroecologists at the <strong>University of Hohenheim</strong>.</li>
-                            <li><strong>International Conference:</strong> Presented scholarly work in international conference inluding <a href="https://aaate.net/" target="_blank">Association for the Advancement of Assistive Technology in Europe (AATE)</a> and <a href="https://www.xrsalento.it/" target="_blank">XR Salento</a>.</li>
-                            <li><strong>Science Communication:</strong> Presented Making AR Accessible in the Science Slams across Baden-Württemberg.</li>
-                            <li><strong>Public Outreach:</strong>Showcased practical applications of immersive technologies at regional innovation fairs such as Make-Ostwürttemberg and promoted STEM interest and immersive technology literacy during Girls' Day in Baden-Württemberg.</li>
-                        </ul>
-
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-2 gap-2">
-
-                    <div class="flex items-center text-[10px] text-gray-500">
-                        <i class="fas fa-certificate mr-1"></i> XR Access, EA-TEL & IxDF Member
-                    </div>
-                </div>
             </div>
 
-            <div class="border p-6 rounded bg-white">
-                <span class="text-blue-500 font-bold">Explaining 3D Scanner</span>
-                <div class="bg-gray-200 border-dashed border-2 p-4 text-center text-gray-500 mt-4 rounded">
-
-                    <img src="images/scanner.jpg" alt="Explaining 3D Scanner" class="w-full object-cover rounded-lg shadow-inner">
-                </div>
-            </div>
-            <div class="border p-6 rounded bg-white">
-                <span class="text-blue-500 font-bold">HoloLens Demonstration</span>
-                <div class="bg-gray-200 border-dashed border-2 p-4 text-center text-gray-500 mt-4 rounded">
-
-                    <img src="images/hololens.jpg" alt="HoloLens Demonstration" class="w-full object-cover rounded-lg shadow-inner">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="engineering" class="py-16 bg-white px-4">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold border-l-8 border-green-600 pl-4 mb-12">Software Engineering & Development</h2>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                <div class="border rounded-xl overflow-hidden shadow-sm bg-white hover:shadow-lg transition-all border-t-4 border-t-blue-500">
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center mr-4">
-                                <i class="fas fa-universal-access text-2xl"></i>
-                            </div>
-                            <h4 class="font-bold text-lg leading-tight">XR Platforms & Accessibility</h4>
-                        </div>
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
-                            Developed components for <strong>accessible AR authoring tools</strong> and created an <strong>Accessible AR Escape Room framework</strong>. Focused on inclusive interaction design and 3D UI components.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto">
-                            <span class="text-[10px] font-mono bg-blue-50 text-blue-700 px-2 py-1 rounded">Unity 3D</span>
-                            <span class="text-[10px] font-mono bg-blue-50 text-blue-700 px-2 py-1 rounded">C#</span>
-                            <span class="text-[10px] font-mono bg-blue-50 text-blue-700 px-2 py-1 rounded">Mixed Reality Toolkit (MRTK)</span>
-                            <span class="text-[10px] font-mono bg-blue-50 text-blue-700 px-2 py-1 rounded">ARCore/ARKit</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="border rounded-xl overflow-hidden shadow-sm bg-white hover:shadow-lg transition-all border-t-4 border-t-green-500">
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-green-50 text-green-600 rounded-lg flex items-center justify-center mr-4">
-                                <i class="fas fa-code text-2xl"></i>
-                            </div>
-                            <h4 class="font-bold text-lg leading-tight">Web Information Systems</h4>
-                        </div>
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
-                            Architected the <strong>Student Register Information System</strong> and the <strong>RUCU Alumni Management System</strong>. Built scalable database schemas and responsive front-end interfaces.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto">
-                            <span class="text-[10px] font-mono bg-green-50 text-green-700 px-2 py-1 rounded">PHP / Laravel</span>
-                            <span class="text-[10px] font-mono bg-green-50 text-green-700 px-2 py-1 rounded">MySQL</span>
-                            <span class="text-[10px] font-mono bg-green-50 text-green-700 px-2 py-1 rounded">JavaScript</span>
-                            <span class="text-[10px] font-mono bg-green-50 text-green-700 px-2 py-1 rounded">Bootstrap</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="border rounded-xl overflow-hidden shadow-sm bg-white hover:shadow-lg transition-all border-t-4 border-t-purple-500">
-                    <div class="p-6">
-                        <div class="flex items-center mb-4">
-                            <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-lg flex items-center justify-center mr-4">
-                                <i class="fas fa-robot text-2xl"></i>
-                            </div>
-                            <h4 class="font-bold text-lg leading-tight">Automated QA & Testing</h4>
-                        </div>
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
-                            Engineered <strong>automated test suites</strong> for both XR platforms (UI stability) and web applications (regression testing), achieving a 60% reduction in manual testing effort.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mt-auto">
-                            <span class="text-[10px] font-mono bg-purple-50 text-purple-700 px-2 py-1 rounded">Selenium</span>
-                            <span class="text-[10px] font-mono bg-purple-50 text-purple-700 px-2 py-1 rounded">PyTest</span>
-                            <span class="text-[10px] font-mono bg-purple-50 text-purple-700 px-2 py-1 rounded">Unity Test Framework</span>
-                            <span class="text-[10px] font-mono bg-purple-50 text-purple-700 px-2 py-1 rounded">JUnit</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section id="infrastructure" class="py-16 bg-slate-50 px-4">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold border-l-8 border-slate-800 pl-4 mb-8 text-slate-900">IT Infrastructure & Systems Administration</h2>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition flex flex-col md:flex-row">
-                    <div class="md:w-1/3 bg-slate-800 flex items-center justify-center text-white p-6">
-                        <i class="fas fa-network-wired text-6xl"></i>
-                    </div>
-                    <div class="p-6 md:w-2/3">
-                        <div class="flex justify-between items-start mb-2">
-                            <h4 class="font-bold text-xl">Enterprise Campus Infrastructure</h4>
-                            <span class="bg-slate-100 text-slate-800 text-xs px-2 py-1 rounded border border-slate-300">Senior Admin</span>
-                        </div>
-                        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
-                            Managed full-lifecycle hybrid infrastructure for <strong>3,000+ users</strong> at RUCU. Engineered <strong>multi-tier VLANs</strong> on Cisco hardware and secured the perimeter using <strong>pfSense and Linux gateways</strong>.
-                        </p>
-                        <div class="grid grid-cols-2 gap-2 mb-4">
-                            <div class="text-xs text-gray-500"><i class="fas fa-check text-green-500 mr-1"></i> Windows/Linux Servers</div>
-                            <div class="text-xs text-gray-500"><i class="fas fa-check text-green-500 mr-1"></i> Active Directory & GPO</div>
-                            <div class="text-xs text-gray-500"><i class="fas fa-check text-green-500 mr-1"></i> VMware & Hyper-V</div>
-                            <div class="text-xs text-gray-500"><i class="fas fa-check text-green-500 mr-1"></i> pfSense Security</div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="bg-white border rounded-lg p-6 shadow-sm hover:shadow-md transition">
-                    <div class="flex items-center mb-4">
-                        <div class="w-10 h-10 bg-red-100 text-red-700 rounded-full flex items-center justify-center mr-3">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h4 class="font-bold text-lg">Security & Network Analysis</h4>
-                    </div>
-                    <p class="text-sm text-gray-600 mb-4">
-                        Authored institutional <strong>ICT Policies</strong> and Disaster Recovery manuals. I specialized in proactive infrastructure health using <strong>Wireshark</strong> for traffic analysis and <strong>Nagios</strong> for real-time service monitoring.
+            <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+                <div class="soft-card p-6">
+                    <h3 class="font-bold text-academic-navy text-lg mb-3">Research & Academic Practice</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Design-Based Research, HCI, usability evaluation, accessibility, technology-enhanced learning,
+                        academic supervision, practice-oriented teaching
                     </p>
-                    <div class="bg-slate-50 border-l-4 border-slate-400 p-3">
-                        <h5 class="text-xs font-bold text-slate-700 uppercase mb-1">Key Achievements:</h5>
-                        <ul class="text-xs text-gray-600 list-disc ml-4 space-y-1">
-                            <li>Identified and resolved broadcast storms through packet-level analysis.</li>
-                            <li>Implemented 24/7 monitoring for 3,000+ user nodes.</li>
-                            <li>Secured internal traffic via Linux-based <strong>Squid Proxy</strong> and content filtering.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-16 px-4 bg-gray-50">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">Professional Journey</h2>
-            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
-
-                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-academic-navy text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <div class="w-[calc(100%-4rem)] md:w-[45%] p-4 rounded border border-slate-200 bg-white shadow">
-                        <div class="flex items-center justify-between space-x-2 mb-1">
-                            <div class="font-bold text-slate-900">Academic Staff Member</div>
-                            <time class="font-mono text-xs font-medium text-blue-500">2021 – 2025</time>
-                        </div>
-                        <div class="text-slate-500 text-sm">DHBW Heidenheim, Germany </div>
-                    </div>
                 </div>
 
-                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
-                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-academic-navy text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </div>
-                    <div class="w-[calc(100%-4rem)] md:w-[45%] p-4 rounded border border-slate-200 bg-white shadow">
-                        <div class="flex items-center justify-between space-x-2 mb-1">
-                            <div class="font-bold text-slate-900">Assistant Lecturer</div>
-                            <time class="font-mono text-xs font-medium text-blue-500">2015 – 2020</time>
-                        </div>
-                        <div class="text-slate-500 text-sm">Ruaha Catholic University, Tanzania</div>
-                    </div>
-                </div>
-                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-academic-navy text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <div class="w-[calc(100%-4rem)] md:w-[45%] p-4 rounded border border-slate-200 bg-white shadow">
-                        <div class="flex items-center justify-between space-x-2 mb-1">
-                            <div class="font-bold text-slate-900">Senior System (IT) Admininistrator</div>
-                            <time class="font-mono text-xs font-medium text-blue-500">2006 – 2015</time>
-                        </div>
-                        <div class="text-slate-500 text-sm">Ruaha Catholic University, Tanzania </div>
-                    </div>
-                </div>
-                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
-                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-academic-navy text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </div>
-                    <div class="w-[calc(100%-4rem)] md:w-[45%] p-4 rounded border border-slate-200 bg-white shadow">
-                        <div class="flex items-center justify-between space-x-2 mb-1">
-                            <div class="font-bold text-slate-900">System (IT) Admininistrator</div>
-                            <time class="font-mono text-xs font-medium text-blue-500">2002 – 2006</time>
-                        </div>
-                        <div class="text-slate-500 text-sm">University of Dar es Salaam, Tanzania</div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="py-16 px-4 bg-white">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-12">Education</h2>
-            <div class="grid md:grid-cols-3 gap-8 text-center">
-                <div>
-                    <h3 class="font-bold text-xl">Ph.D. Agricultural Sciences (Technology-Enhanced Learning)</h3>
-                    <p class="text-blue-600 font-medium">University of Hohenheim, Germany</p>
-                </div>
-                <div>
-                    <h3 class="font-bold text-xl">M.Sc. Info & Comm Science</h3>
-                    <p class="text-blue-600 font-medium">NM-AIST, Tanzania </p>
-                </div>
-                <div>
-                    <h3 class="font-bold text-xl">B.Sc. Computer Science</h3>
-                    <p class="text-blue-600 font-medium">University of Dar es Salaam, Tanzania</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contact" class="academic-navy text-white py-20 px-4">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-8 text-center">Get In Touch</h2>
-
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <p class="text-blue-100 mb-6 leading-relaxed">
-                        I am open to collaborations regarding <strong>Applied XR Research</strong>, <strong>Quality Assurance</strong>, or <strong>Infrastructure Consultations</strong>. Please use the form to send a direct message.
+                <div class="soft-card p-6">
+                    <h3 class="font-bold text-academic-navy text-lg mb-3">Development</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        C#, Unity, Java, PHP, Python, JavaScript, MySQL, full-stack information systems,
+                        AR/VR prototyping, interactive application design
                     </p>
+                </div>
+
+                <div class="soft-card p-6">
+                    <h3 class="font-bold text-academic-navy text-lg mb-3">Testing & Quality</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Selenium, PyTest, JUnit, Unity Test Framework, regression testing, QA workflows,
+                        structured validation in applied software environments
+                    </p>
+                </div>
+
+                <div class="soft-card p-6">
+                    <h3 class="font-bold text-academic-navy text-lg mb-3">Infrastructure & Operations</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Active Directory, GPO, DNS, DHCP, Linux and Windows Server,
+                        virtualisation, VLANs, Moodle, web services, monitoring, network analysis
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research -->
+    <section id="research" class="section-anchor py-20 px-4 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="max-w-3xl mb-12">
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-academic-navy mb-3">Research & Teaching</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Research-led development for inclusive digital learning</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    My academic work focuses on accessible XR, digital learning systems, and practical methods
+                    for designing technology that can be used effectively by non-technical educators and diverse learners.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <article class="soft-card p-7">
+                    <p class="text-sm font-semibold uppercase tracking-widest text-blue-600 mb-2">Featured Publication</p>
+                    <h3 class="text-xl font-bold mb-3">
+                        Integrating Design-Based Research and Agile Scrum for Inclusive Educational Technology Design
+                    </h3>
+                    <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                        This publication examines how Design-Based Research and Agile Scrum can be integrated in the
+                        development of accessible educational technology. The study offers a validated methodological
+                        framework for aligning iterative technical implementation with inclusive design and stakeholder feedback.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded">DBR</span>
+                        <span class="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded">Agile Scrum</span>
+                        <span class="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded">Accessibility</span>
+                        <span class="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded">EdTech</span>
+                    </div>
+                    <a href="https://doi.org/10.3390/multimedia1020006" target="_blank" rel="noopener noreferrer" class="font-semibold text-academic-navy hover:underline">
+                        Read publication →
+                    </a>
+                </article>
+
+                <article class="soft-card p-7">
+                    <p class="text-sm font-semibold uppercase tracking-widest text-blue-600 mb-2">Ph.D. Dissertation</p>
+                    <h3 class="text-xl font-bold mb-3">
+                        Design and Development of an Accessible Open-Source Augmented Reality Learning Authoring Tool
+                    </h3>
+                    <p class="text-sm text-slate-600 mb-4 leading-relaxed">
+                        My doctoral research addressed how accessible AR authoring environments can support educators in
+                        creating inclusive learning experiences. The work contributed to open-source XR development,
+                        accessibility practice, and standards-related discourse in immersive learning.
+                    </p>
+                    <div class="space-y-2 text-sm text-slate-700">
+                        <p><strong>Methodological emphasis:</strong> Design-Based Research, Agile Scrum, usability evaluation, inclusive design.</p>
+                        <p><strong>Practical contribution:</strong> Accessible authoring support for non-technical educators and learning content creators.</p>
+                    </div>
+                    <a href="https://doi.org/10.60848/13109" target="_blank" rel="noopener noreferrer" class="inline-block mt-4 font-semibold text-academic-navy hover:underline">
+                        View dissertation record →
+                    </a>
+                </article>
+
+                <article class="soft-card p-7">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Applied teaching and supervision</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        I have taught in both dual-study and conventional university contexts, with a focus on
+                        applied learning, laboratory-based instruction, software development, and immersive technologies.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-700 list-disc ml-5">
+                        <li>Courses in AR/VR, programming, software development, HCI, and related technical subjects</li>
+                        <li>Supervision of student projects and practice-oriented applied research</li>
+                        <li>Support for experiential learning through laboratory preparation and digital platforms</li>
+                    </ul>
+                    <div class="mt-5 flex flex-wrap gap-2">
+                        <span class="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded">DHBW Heidenheim</span>
+                        <span class="text-xs bg-slate-100 text-slate-700 px-2 py-1 rounded">Ruaha Catholic University</span>
+                    </div>
+                </article>
+
+                <article class="soft-card p-7">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">International engagement and outreach</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        I participate in scholarly, industrial, and public-facing activities that translate immersive
+                        technology research into practical educational and societal value.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-700 list-disc ml-5">
+                        <li>Workshops on accessible AR for academic and industry-linked audiences</li>
+                        <li>Research presentations at international conferences and XR-related events</li>
+                        <li>Outreach activities promoting STEM, accessibility, and immersive technology literacy</li>
+                        <li>Service as reviewer and programme committee contributor in academic contexts</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mt-10">
+                <div class="soft-card p-5">
+                    <p class="text-sm font-semibold uppercase tracking-widest text-blue-600 mb-3">Field and laboratory engagement</p>
+                    <img src="images/scanner.jpg" alt="Explaining a 3D scanner" class="w-full h-72 object-cover rounded-xl" />
+                </div>
+                <div class="soft-card p-5">
+                    <p class="text-sm font-semibold uppercase tracking-widest text-blue-600 mb-3">Immersive technology demonstration</p>
+                    <img src="images/hololens.jpg" alt="HoloLens demonstration" class="w-full h-72 object-cover rounded-xl" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engineering -->
+    <section id="engineering" class="section-anchor py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="max-w-3xl mb-12">
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700 mb-3">Software Engineering</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Development with accessibility, reliability, and practical use in mind</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    My development work combines applied research, institutional software design, and test-driven quality practices.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+                <article class="soft-card p-6">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center mb-4">
+                        <i class="fas fa-universal-access"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Accessible XR systems</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Developed components and concepts for accessible AR authoring tools and immersive learning environments,
+                        with a focus on usability, inclusive interaction, and educational applicability.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded">Unity</span>
+                        <span class="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded">C#</span>
+                        <span class="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded">MRTK</span>
+                        <span class="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded">ARCore / ARKit</span>
+                    </div>
+                </article>
+
+                <article class="soft-card p-6">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-4">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Web information systems</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Designed and implemented institutional systems including student registration and alumni management,
+                        with attention to data structure, maintainability, and end-user workflow.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2 py-1 rounded">PHP</span>
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2 py-1 rounded">Laravel</span>
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2 py-1 rounded">MySQL</span>
+                        <span class="text-xs bg-emerald-50 text-emerald-700 px-2 py-1 rounded">JavaScript</span>
+                    </div>
+                </article>
+
+                <article class="soft-card p-6">
+                    <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-700 flex items-center justify-center mb-4">
+                        <i class="fas fa-vial-circle-check"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Automated testing and QA</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                        Built automated testing workflows for web applications and XR-related interfaces to reduce manual effort,
+                        improve regression coverage, and strengthen release confidence.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs bg-purple-50 text-purple-700 px-2 py-1 rounded">Selenium</span>
+                        <span class="text-xs bg-purple-50 text-purple-700 px-2 py-1 rounded">PyTest</span>
+                        <span class="text-xs bg-purple-50 text-purple-700 px-2 py-1 rounded">JUnit</span>
+                        <span class="text-xs bg-purple-50 text-purple-700 px-2 py-1 rounded">Unity Test Framework</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infrastructure -->
+    <section id="infrastructure" class="section-anchor py-20 px-4 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="max-w-3xl mb-12">
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-slate-700 mb-3">Infrastructure & Operations</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Institutional systems, networks, and operational reliability</h2>
+                <p class="text-slate-600 leading-relaxed">
+                    My infrastructure experience was developed in higher education environments where continuity,
+                    scale, and usability were critical for teaching, administration, and institutional services.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <article class="soft-card p-7">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-800 flex items-center justify-center">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3 class="font-bold text-xl">Enterprise campus infrastructure</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-5">
+                        Managed hybrid academic infrastructure supporting more than 3,000 users and hundreds of end devices.
+                        This included server environments, network segmentation, identity services, virtualisation,
+                        and operational support for institutional systems.
+                    </p>
+                    <div class="grid sm:grid-cols-2 gap-3 text-sm">
+                        <div class="rounded-lg bg-slate-50 border border-slate-200 p-3">Windows and Linux server administration</div>
+                        <div class="rounded-lg bg-slate-50 border border-slate-200 p-3">Active Directory, DNS, DHCP, GPO</div>
+                        <div class="rounded-lg bg-slate-50 border border-slate-200 p-3">VMware, Hyper-V, hybrid environments</div>
+                        <div class="rounded-lg bg-slate-50 border border-slate-200 p-3">Cisco VLANs and secure campus networking</div>
+                    </div>
+                </article>
+
+                <article class="soft-card p-7">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-red-50 text-red-700 flex items-center justify-center">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <h3 class="font-bold text-xl">Security, monitoring, and resilience</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-5">
+                        Contributed to policy, continuity, and security-oriented operations through monitoring,
+                        troubleshooting, and network analysis in active institutional environments.
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-700 list-disc ml-5">
+                        <li>Network traffic analysis and fault isolation with Wireshark</li>
+                        <li>Service monitoring using Nagios and related operational practices</li>
+                        <li>Support for ICT policy development and disaster recovery planning</li>
+                        <li>Secure gateway, proxy, and content-filtering environments in Linux-based systems</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section-anchor py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="max-w-3xl mb-12">
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-academic-navy mb-3">Professional Journey</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Experience across academia and technical operations</h2>
+            </div>
+
+            <div class="space-y-6">
+                <div class="soft-card p-6 md:p-7">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-3">
+                        <div>
+                            <h3 class="font-bold text-xl">Labor Engineer</h3>
+                            <p class="text-slate-600">DHBW Heidenheim, Germany</p>
+                        </div>
+                        <span class="inline-flex items-center rounded-full bg-blue-50 text-blue-700 px-3 py-1 text-sm font-medium">
+                            Jan 2026 – Mar 2026
+                        </span>
+                    </div>
+                    <p class="text-sm text-slate-700 leading-relaxed">
+                        Supported laboratory readiness, system imaging, hardware preparation, and the operation of practical
+                        learning environments, including Data Science and AI laboratory contexts.
+                    </p>
+                </div>
+
+                <div class="soft-card p-6 md:p-7">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-3">
+                        <div>
+                            <h3 class="font-bold text-xl">Academic Staff / Research and Teaching</h3>
+                            <p class="text-slate-600">DHBW Heidenheim, Germany</p>
+                        </div>
+                        <span class="inline-flex items-center rounded-full bg-blue-50 text-blue-700 px-3 py-1 text-sm font-medium">
+                            2021 – 2025
+                        </span>
+                    </div>
+                    <p class="text-sm text-slate-700 leading-relaxed">
+                        Taught in cloud computing, machine learning, and AR/VR programming; led research and development
+                        activities in accessible educational technology; and supported digital teaching through Moodle and related systems.
+                    </p>
+                </div>
+
+                <div class="soft-card p-6 md:p-7">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-3">
+                        <div>
+                            <h3 class="font-bold text-xl">Assistant Lecturer, Computer Science</h3>
+                            <p class="text-slate-600">Ruaha Catholic University, Tanzania</p>
+                        </div>
+                        <span class="inline-flex items-center rounded-full bg-blue-50 text-blue-700 px-3 py-1 text-sm font-medium">
+                            2015 – 2020
+                        </span>
+                    </div>
+                    <p class="text-sm text-slate-700 leading-relaxed">
+                        Delivered programming and computing courses, supervised student work, and contributed to curriculum
+                        and institutional systems development in a university environment.
+                    </p>
+                </div>
+
+                <div class="soft-card p-6 md:p-7">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-3">
+                        <div>
+                            <h3 class="font-bold text-xl">Senior Systems Administrator</h3>
+                            <p class="text-slate-600">Ruaha Catholic University, Tanzania</p>
+                        </div>
+                        <span class="inline-flex items-center rounded-full bg-blue-50 text-blue-700 px-3 py-1 text-sm font-medium">
+                            2006 – 2015
+                        </span>
+                    </div>
+                    <p class="text-sm text-slate-700 leading-relaxed">
+                        Designed and operated institutional infrastructure, including network architecture, servers,
+                        web services, security layers, digital learning systems, and support for a large university user base.
+                    </p>
+                </div>
+
+                <div class="soft-card p-6 md:p-7">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 mb-3">
+                        <div>
+                            <h3 class="font-bold text-xl">Systems Administrator</h3>
+                            <p class="text-slate-600">University of Dar es Salaam, Tanzania</p>
+                        </div>
+                        <span class="inline-flex items-center rounded-full bg-blue-50 text-blue-700 px-3 py-1 text-sm font-medium">
+                            2002 – 2006
+                        </span>
+                    </div>
+                    <p class="text-sm text-slate-700 leading-relaxed">
+                        Supported faculty-wide IT services, user administration, network operations, and core infrastructure services.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="py-20 px-4 bg-white border-y border-slate-200">
+        <div class="max-w-6xl mx-auto">
+            <div class="max-w-3xl mb-12">
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-academic-navy mb-3">Education</p>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Academic qualifications</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="soft-card p-6">
+                    <h3 class="font-bold text-lg mb-2">Ph.D. in Agricultural Sciences</h3>
+                    <p class="text-sm text-slate-600 mb-2">University of Hohenheim, Germany</p>
+                    <p class="text-sm text-slate-700">Focus: Accessible AR authoring systems and technology-enhanced learning</p>
+                </div>
+
+                <div class="soft-card p-6">
+                    <h3 class="font-bold text-lg mb-2">M.Sc. in Information and Communication Science</h3>
+                    <p class="text-sm text-slate-600 mb-2">NM-AIST, Tanzania</p>
+                    <p class="text-sm text-slate-700">Advanced study in computing and information systems</p>
+                </div>
+
+                <div class="soft-card p-6">
+                    <h3 class="font-bold text-lg mb-2">B.Sc. in Computer Science</h3>
+                    <p class="text-sm text-slate-600 mb-2">University of Dar es Salaam, Tanzania</p>
+                    <p class="text-sm text-slate-700">Foundational education in computer science and systems practice</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact" class="section-anchor bg-academic-navy text-white py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-200 mb-3">Contact</p>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6">Open to academic, technical, and collaborative opportunities</h2>
+                    <p class="text-blue-100 leading-relaxed mb-8 max-w-2xl">
+                        I welcome conversations related to applied research, teaching and laboratory support,
+                        software development, quality assurance, IT infrastructure, and accessible digital learning.
+                    </p>
+
                     <div class="space-y-4 text-sm">
-                        <div class="flex items-center"><i class="fab fa-linkedin w-6 text-blue-400"></i> <a href="https://www.linkedin.com/in/deoshidende/" class="hover:underline">LinkedIn Profile</a></div>
-                        <div class="flex items-center"><i class="fab fa-twitter w-6 text-blue-400"></i> <a href="https://www.x.com" class="hover:underline">@dshidende</a></div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-envelope text-blue-300 w-5"></i>
+                            <a href="mailto:dshidende@gmail.com" class="hover:underline">dshidende@gmail.com</a>
+                        </div>
+                        
+                        <div class="flex items-center gap-3">
+                            <i class="fab fa-linkedin text-blue-300 w-5"></i>
+                            <a href="https://www.linkedin.com/in/deoshidende/" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                                LinkedIn Profile
+                            </a>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-id-badge text-blue-300 w-5"></i>
+                            <a href="https://orcid.org/0000-0002-2181-958X" target="_blank" rel="noopener noreferrer" class="hover:underline">
+                                ORCID: 0000-0002-2181-958X
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <form action="https://formspree.io/f/mbddjjnw" method="POST" class="bg-white p-6 rounded-xl text-gray-900 shadow-xl">
-                    <div class="mb-4">
-                        <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Full Name</label>
-                        <input type="text" name="name" required class="w-full p-2 border border-gray-300 rounded focus:border-blue-500 outline-none transition">
-                    </div>
-                    <div class="mb-4">
-                        <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Email Address</label>
-                        <input type="email" name="_replyto" required class="w-full p-2 border border-gray-300 rounded focus:border-blue-500 outline-none transition">
-                    </div>
-                    <div class="mb-4">
-                        <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Message</label>
-                        <textarea name="message" rows="4" required class="w-full p-2 border border-gray-300 rounded focus:border-blue-500 outline-none transition"></textarea>
-                    </div>
-                    <input type="text" name="_gotcha" style="display:none">
+                <div class="bg-white rounded-2xl p-6 shadow-xl text-slate-900">
+                    <h3 class="text-xl font-bold mb-4 text-academic-navy">Send a message</h3>
+                    <form action="https://formspree.io/f/mbddjjnw" method="POST" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wide text-slate-500 mb-1">Full name</label>
+                            <input
+                                type="text"
+                                name="name"
+                                required
+                                class="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-600"
+                            />
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wide text-slate-500 mb-1">Email address</label>
+                            <input
+                                type="email"
+                                name="_replyto"
+                                required
+                                class="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-600"
+                            />
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wide text-slate-500 mb-1">Message</label>
+                            <textarea
+                                name="message"
+                                rows="5"
+                                required
+                                class="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-blue-600"
+                            ></textarea>
+                        </div>
 
-                    <button type="submit" class="w-full academic-navy text-white font-bold py-3 rounded hover:bg-blue-800 transition">
-                        Send Message <i class="fas fa-paper-plane ml-2"></i>
-                    </button>
-                </form>
+                        <input type="text" name="_gotcha" style="display:none" />
+
+                        <button
+                            type="submit"
+                            class="w-full rounded-xl bg-academic-navy text-white font-bold py-3 hover:bg-academic-navy-dark transition"
+                        >
+                            Send Message <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
             </div>
 
-            <p class="text-center text-xs text-slate-400 mt-16 uppercase tracking-widest">
-                © 2026 Dr. Deogratias Shidende | Built with Tailwind CSS
-            </p>
+            <div class="mt-16 pt-8 border-t border-white/15 text-center text-sm text-blue-200">
+                © 2026 Dr. Deogratias Shidende · Built with Tailwind CSS
+            </div>
         </div>
     </footer>
 
